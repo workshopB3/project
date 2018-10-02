@@ -1,5 +1,4 @@
 <?php
-ob_start();
 session_start();
 include ('controller.php');
 $page = !empty($_GET["page"]) ? $_GET["page"] : 'home';

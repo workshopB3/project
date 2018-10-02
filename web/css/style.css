@@ -1,3 +1,14 @@
+body{
+  font-family: Open Sans;
+}
+.description{
+  font-size: 18px;
+  margin-top: 30px;
+}
+h1{
+  font-size: 64px;
+  margin: 0;
+}
 .section{
     font-size: 6em;
     text-align: center;
@@ -34,13 +45,24 @@
 #menu li.active a{
 	color: #fff;
 }
+img {
+  -webkit-transition: -webkit-transform .8s ease-in-out;
+          transition:         transform .8s ease-in-out;
+}
+img:hover{
+  -webkit-transform: rotate(360deg);
+  transform: rotate(360deg);
+}
 #menu{
+ background-color: white;
 	position:fixed;
 	top:0;
 	left:0;
-	height: 40px;
 	z-index: 70;
+  border: 2px solid grey;
+  color: white;
 	width: 100%;
 	padding: 0;
+  text-align: center;
 	margin:0;
 }
