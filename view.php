@@ -11,6 +11,7 @@ class View{
   }
   public function displayNavigation($img){
     $this->smarty->assign('img', $img);
+    $this->smarty->assign('encoded_img', json_encode($img));
     $this->display('navigation');
   }
   private function display($html){

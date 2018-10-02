@@ -14,7 +14,7 @@
     "name" : "Accueil",
     "url" : "./assets/imgs/accueil.jpg",
     "left" : 0,
-    "forward" : 0,
+    "forward" : 1,
     "right" : 3,
     "behind" : 1,
     "categorie" : ""

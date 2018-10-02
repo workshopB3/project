@@ -1,3 +1,20 @@
 <div id="img-content">
-  <img width="800" height="800" style="width:100%; height:100%;"  src="{$img}"></img>
+  <img id="navImg" width="800" height="800" style="width:100%; height:100%;"src="{$img[0]['url']}" onclick="changeSrcImg();"></img>
 </div>
+<script language="javascript">
+  var imgIndex = 0;
+
+  function changeSrcImg() {
+    var encodedImg = {$encoded_img};
+    var currentObj = encodedImg[imgIndex];
+    for (var i = 0; i<encodedImg.length; i++) {
+      var obj = encodedImg[i];
+      if(obj.id == currentObj.forward) {
+        currentObj = obj;
+        imgIndex = i;
+        break;
+      }
+    }
+    document.getElementById("navImg").src = currentObj.url;
+  }
+</script>

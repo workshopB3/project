@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-02 13:27:04
-  from '/Users/ronanlaplaud/Documents/project/html/header.html' */
+/* Smarty version 3.1.33, created on 2018-10-02 13:17:05
+  from '/Users/ronanlaplaud/Documents/project/html/header.php' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb35608ebeae8_75878927',
+  'unifunc' => 'content_5bb353b19f12b2_47394789',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    'fde9a91149ef94e24696d24bc558935b356688a0' => 
+    '9b6335c0e4a7b7fb726dfe48ff1bba5221738736' => 
     array (
-      0 => '/Users/ronanlaplaud/Documents/project/html/header.html',
-      1 => 1538479392,
+      0 => '/Users/ronanlaplaud/Documents/project/html/header.php',
+      1 => 1538470690,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb35608ebeae8_75878927 (Smarty_Internal_Template $_smarty_tpl) {
-?>
-<!DOCTYPE html>
+function content_5bb353b19f12b2_47394789 (Smarty_Internal_Template $_smarty_tpl) {
+?><!DOCTYPE html>
 <html lang="fr">
 <head>
 	<title>Workshop</title>
