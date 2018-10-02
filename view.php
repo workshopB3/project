@@ -6,8 +6,8 @@ class View{
     $this->smarty = new Smarty();
     $this->display('header');
   }
-  public function displayHome(){
-    $this->display('home');
+  public function displayOnePage(){
+    $this->display('onepage/onepage');
   }
   public function displayNavigation($img){
     $this->smarty->assign('img', $img);
