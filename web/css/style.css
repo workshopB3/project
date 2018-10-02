@@ -66,3 +66,8 @@ h1{
   text-align: center;
 	margin:0;
 }
+
+#content {
+  padding-top: 7%;
+  position: relative;
+}

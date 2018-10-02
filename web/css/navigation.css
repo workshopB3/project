@@ -4,7 +4,7 @@
 }
 .fleche{
   z-index: 10;
-  position: fixed;
+  position: relative;
   width:10%;
   height:12%;
   display: block;
