@@ -9,9 +9,8 @@ class View{
   public function displayHome(){
     $this->display('home');
   }
-  public function displayNavigation(){
-    $img_url = !empty($_GET["img_url"]) ? $_GET["img_url"] : "test";
-    $this->smarty->assign('img_url', $img_url);
+  public function displayNavigation($img){
+    $this->smarty->assign('img', $img);
     $this->display('navigation');
   }
   private function display($html){
