@@ -1,5 +1,6 @@
 .fleche:hover{
   cursor: pointer;
+  opacity: 1;
 }
 .fleche{
   z-index: 10;
@@ -7,4 +8,5 @@
   width:10%;
   height:12%;
   display: block;
+  opacity: 0.7;
 }
