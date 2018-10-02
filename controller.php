@@ -12,6 +12,9 @@ class Controller {
     $this->view->displayHome();
   }
   public function navigation(){
-    $this->view->displayNavigation();
+    $url = "./assets/json/img.json";
+    $data = file_get_contents($url);
+    $img = json_decode($data)[0];
+    $this->view->displayNavigation($img);
   }
 }
