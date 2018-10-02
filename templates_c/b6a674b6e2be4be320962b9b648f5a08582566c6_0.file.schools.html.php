@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-02 16:19:02
+/* Smarty version 3.1.33, created on 2018-10-02 16:34:00
   from '/Users/adrien/Sites/workshop/html/onepage/schools.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb37e56a32c21_37707888',
+  'unifunc' => 'content_5bb381d846e9c0_91223976',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b6a674b6e2be4be320962b9b648f5a08582566c6' => 
     array (
       0 => '/Users/adrien/Sites/workshop/html/onepage/schools.html',
-      1 => 1538489926,
+      1 => 1538490838,
       2 => 'file',
     ),
   ),
@@ -20,12 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb37e56a32c21_37707888 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb381d846e9c0_91223976 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="section" data-anchor="schools">
   <h1>Nos écoles</h1>
 </div>
 <div class="section">
-        <img src="http://dev.meilleures-licences.com/logo_ecole/epsilogo-1447338739.png" width="260px" />
+        <img class="rotate" src="http://dev.meilleures-licences.com/logo_ecole/epsilogo-1447338739.png" width="260px" />
         <p class="description">
           EPSI,
       Première école d’informatique en France à avoir été créée par des professionnels,
@@ -34,7 +34,7 @@ function content_5bb37e56a32c21_37707888 (Smarty_Internal_Template $_smarty_tpl)
         </p>
 </div>
 <div class="section">
-      <img src="http://www.concours-team.net/sites/default/files/logo_idrac2.png" width="260px" />
+      <img class="rotate" src="http://www.concours-team.net/sites/default/files/logo_idrac2.png" width="260px" />
       <p class="description">
         IDRAC Business School est une école de commerce.
         Elle propose  un grand nombre de formations telles qu’une formation en marketing & business ou encore une formation  en management opérationnel.
@@ -42,7 +42,7 @@ function content_5bb37e56a32c21_37707888 (Smarty_Internal_Template $_smarty_tpl)
       </p>
 </div>
 <div class="section">
-      <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Ifag_logo.png" width="260px" />
+      <img class="rotate" src="https://upload.wikimedia.org/wikipedia/commons/6/6b/Ifag_logo.png" width="260px" />
       <p class="description">
         L’IFAG est une école de management et d’entrepreneuria.
         Elle forme les créateurs et repreneurs d’entreprises ainsi que tous ceux qui souhaitent occuper une fonction de direction.
@@ -58,7 +58,7 @@ function content_5bb37e56a32c21_37707888 (Smarty_Internal_Template $_smarty_tpl)
       </p>
     </div>
     <div class="section">
-      <img src="https://www.tagemage.fr/images/school/166-SUP-'DE%20COM-Logo-01.jpg" width="260px" />
+      <img  class="rotate"src="https://www.tagemage.fr/images/school/166-SUP-'DE%20COM-Logo-01.jpg" width="260px" />
       <p class="description">
         SUP’DE COM est la première école de communication française.
         Elle propose un  parcours de formation évolutif qui vous ouvrira les portes des postes à responsabilité en agence ou dans les services de communication.
@@ -66,7 +66,7 @@ function content_5bb37e56a32c21_37707888 (Smarty_Internal_Template $_smarty_tpl)
       </p>
     </div>
     <div class="section">
-      <img src="https://www.usine-digitale.fr/mediatheque/9/2/1/000643129.png" width="260px" />
+      <img class="rotate" src="https://www.usine-digitale.fr/mediatheque/9/2/1/000643129.png" width="260px" />
       <p class="description">
         WIS est une école de web et de digital business. Elle forme des professionnels capables d’accompagner
          le développement des entreprises dans la digitalisation des processus métier.
