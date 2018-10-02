@@ -45,11 +45,11 @@ h1{
 #menu li.active a{
 	color: #fff;
 }
-img {
+.rotate {
   -webkit-transition: -webkit-transform .8s ease-in-out;
           transition:         transform .8s ease-in-out;
 }
-img:hover{
+.rotate:hover{
   -webkit-transform: rotate(360deg);
   transform: rotate(360deg);
 }
