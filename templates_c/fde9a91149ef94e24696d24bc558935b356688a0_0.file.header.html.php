@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-02 16:41:55
+/* Smarty version 3.1.33, created on 2018-10-02 16:55:03
   from '/Users/ronanlaplaud/Documents/project/html/header.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb383b3ca1781_90398234',
+  'unifunc' => 'content_5bb386c7c1eba4_12132378',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fde9a91149ef94e24696d24bc558935b356688a0' => 
     array (
       0 => '/Users/ronanlaplaud/Documents/project/html/header.html',
-      1 => 1538491290,
+      1 => 1538492089,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb383b3ca1781_90398234 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb386c7c1eba4_12132378 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -44,6 +44,5 @@ function content_5bb383b3ca1781_90398234 (Smarty_Internal_Template $_smarty_tpl)
         <li data-menuanchor="Navigation"><a href="index.php?page=navigation">Navigation</a></li>
     </ul>
 	</nav>
-	<div id="content">
 <?php }
 }
