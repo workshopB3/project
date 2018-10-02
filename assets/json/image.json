@@ -6,7 +6,7 @@
     "left" : 0,
     "forward" : 2,
     "right" : 0,
-    "behind" : 3,
+    "behind" : 0,
     "categorie" : ""
   },
   {
@@ -14,7 +14,7 @@
     "name" : "Accueil",
     "url" : "./assets/imgs/accueil.jpg",
     "left" : 0,
-    "forward" : 1,
+    "forward" : 0,
     "right" : 3,
     "behind" : 1,
     "categorie" : ""
