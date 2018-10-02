@@ -1,0 +1,20 @@
+{
+  "picture1" : {
+    "id" : 1,
+    "name" : "Entrée du bâtiment",
+    "url" : "../imgs/",
+    "left" : 0,
+    "forward" : 2,
+    "right" : 0,
+    "categorie" : ""
+  },
+  "picture2" : {
+    "id" : 2,
+    "name" : "Accueil",
+    "url" : "../imgs/",
+    "left" : 0,
+    "forward" : 0,
+    "right" : 3,
+    "categorie" : ""
+  }
+}
