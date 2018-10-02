@@ -1,17 +1,21 @@
+<link rel="stylesheet" href="web/css/navigation.css">
+
 <div id="img-content">
-  <img id="navImg" width="800" height="800" style="position: absolute;z-index: 1;width:100%; height:100%;" src="{$img[0]['url']}" onclick="changeSrcImg('forward');">
-    <img class="fleche" style="left:5%;top:45%" src="./assets/imgs/fleche_grise.png">Flèche gauche</img>
-    <img class="fleche" style="right:5%;top:45%" src="./assets/imgs/fleche_grise.png">Flèche droite</img>
-    <img class="fleche" style="left:45%;top:5%" src="./assets/imgs/fleche_grise.png">Flèche haut</img>
-    <img class="fleche" style="left:45%;bottom:5%" src="./assets/imgs/fleche_grise.png">Flèche bas</img>
+  <img id="navImg" width="800" height="800" style="position: absolute;z-index: 1;width:100%; height:100%;" src="{$img[0]['url']}">
+    <img id="arrowLeft" class="fleche" style="left:5%;top:45%" src="./assets/imgs/fleche_grise.png" onclick="changeSrcImg('left');"></img>
+    <img id="arrowRight" class="fleche" style="right:5%;top:45%" src="./assets/imgs/fleche_grise.png" onclick="changeSrcImg('right');"></img>
+    <img id="arrowForward" class="fleche" style="left:45%;top:5%" src="./assets/imgs/fleche_grise.png" onclick="changeSrcImg('forward');"></img>
+    <img id="arrowBehind" class="fleche" style="left:45%;bottom:5%" src="./assets/imgs/fleche_grise.png" onclick="changeSrcImg('behind');"></img>
   </img>
-</img>
 </div>
 <script language="javascript">
   var imgIndex = 0;
+  var encodedImg = {$encoded_img};
+  var currentObj = encodedImg[imgIndex];
+  displayArrows(currentObj);
+
 
   function changeSrcImg(direction) {
-    var encodedImg = {$encoded_img};
     var currentObj = encodedImg[imgIndex];
     for (var i = 0; i<encodedImg.length; i++) {
       var obj = encodedImg[i];
@@ -22,5 +26,36 @@
       }
     }
     document.getElementById("navImg").src = currentObj.url;
+    displayArrows(currentObj);
+  }
+
+  function displayArrows(obj) {
+    if(obj.forward != 0) {
+      document.getElementById("arrowForward").style.display = "block";
+    }
+    else {
+      document.getElementById("arrowForward").style.display = "none";
+    }
+
+    if(obj.behind != 0) {
+      document.getElementById("arrowBehind").style.display = "block";
+    }
+    else {
+      document.getElementById("arrowBehind").style.display = "none";
+    }
+
+    if(obj.left != 0) {
+      document.getElementById("arrowLeft").style.display = "block";
+    }
+    else {
+      document.getElementById("arrowLeft").style.display = "none";
+    }
+
+    if(obj.right != 0) {
+      document.getElementById("arrowRight").style.display = "block";
+    }
+    else {
+      document.getElementById("arrowRight").style.display = "none";
+    }
   }
 </script>
