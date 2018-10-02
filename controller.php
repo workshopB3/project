@@ -9,7 +9,7 @@ class Controller {
     $this->view = new View();
   }
   public function home(){
-    $this->view->displayHome();
+    $this->view->displayOnePage();
   }
   public function navigation(){
     $this->view->displayNavigation();

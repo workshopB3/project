@@ -6,8 +6,8 @@ class View{
     $this->smarty = new Smarty();
     $this->display('header');
   }
-  public function displayHome(){
-    $this->display('home');
+  public function displayOnePage(){
+    $this->display('onepage/onepage');
   }
   public function displayNavigation(){
     $img_url = !empty($_GET["img_url"]) ? $_GET["img_url"] : "test";
