@@ -1,40 +1,42 @@
-{
-  "id" : 1,
-  "name" : "Entrée du bâtiment",
-  "url" : "./assets/imgs/epsi-front.jpg",
-  "left" : 0,
-  "forward" : 2,
-  "right" : 0,
-  "behind" : 0,
-  "categorie" : ""
-},
-{
-  "id" : 2,
-  "name" : "Accueil",
-  "url" : "./assets/imgs/accueil.jpg",
-  "left" : 0,
-  "forward" : 0,
-  "right" : 3,
-  "behind" : 1,
-  "categorie" : ""
-},
-{
-  "id" : 3,
-  "name" : "Salle de vie",
-  "url" : "./assets/imgs/self-from-entry.jpg",
-  "left" : 0,
-  "forward" : 4,
-  "right" : 0,
-  "behind" : 2,
-  "categorie" : ""
-},
-{
-  "id" : 4,
-  "name" : "Escalier de la salle de vie",
-  "url" : "./assets/imgs/self-stairs.jpg",
-  "left" : 6,
-  "forward" : 5,
-  "right" : 7,
-  "behind" : 3,
-  "categorie" : ""
-}
+[
+  {
+    "id" : 1,
+    "name" : "Entrée du bâtiment",
+    "url" : "./assets/imgs/epsi-front.jpg",
+    "left" : 0,
+    "forward" : 2,
+    "right" : 0,
+    "behind" : 0,
+    "categorie" : ""
+  },
+  {
+    "id" : 2,
+    "name" : "Accueil",
+    "url" : "./assets/imgs/accueil.jpg",
+    "left" : 0,
+    "forward" : 0,
+    "right" : 3,
+    "behind" : 1,
+    "categorie" : ""
+  },
+  {
+    "id" : 3,
+    "name" : "Salle de vie",
+    "url" : "./assets/imgs/self-from-entry.jpg",
+    "left" : 0,
+    "forward" : 4,
+    "right" : 0,
+    "behind" : 2,
+    "categorie" : ""
+  },
+  {
+    "id" : 4,
+    "name" : "Escalier de la salle de vie",
+    "url" : "./assets/imgs/self-stairs.jpg",
+    "left" : 6,
+    "forward" : 5,
+    "right" : 7,
+    "behind" : 3,
+    "categorie" : ""
+  }
+]

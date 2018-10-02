@@ -15,7 +15,7 @@ class Controller {
     $data_url = './assets/json/image.json';
     $data = file_get_contents($data_url);
     $json_data = stripslashes(html_entity_decode($data));
-    $img = json_decode($json_data);
-    $this->view->displayNavigation($img);
+    $img = json_decode($json_data, true);
+    $this->view->displayNavigation($img[0]['url']);
   }
 }
