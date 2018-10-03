@@ -1,4 +1,27 @@
-<button id="libre" onclick="window.location.href='/index.php?page=navigation'">Visite libre</button>
+<?php
+/* Smarty version 3.1.33, created on 2018-10-03 15:14:30
+  from '/Users/ronanlaplaud/Documents/project/html/navigation_choice.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5bb4c0b6eb8e06_02680712',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'cdf60d02d24ecdaa2a12e06ea96ba2cb653d5f06' => 
+    array (
+      0 => '/Users/ronanlaplaud/Documents/project/html/navigation_choice.html',
+      1 => 1538572469,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5bb4c0b6eb8e06_02680712 (Smarty_Internal_Template $_smarty_tpl) {
+?><button id="libre" onclick="window.location.href='/index.php?page=navigation'">Visite libre</button>
 <button id="guidee" onclick="document.getElementById('dropdownCat').style.display='block';">Visite guidée</button>
 
 <form>
@@ -13,8 +36,10 @@
   </a>
 </form>
 
-<script language="javascript">
-  var encodedImg = {$encoded_img};
+<?php echo '<script'; ?>
+ language="javascript">
+  var encodedImg = <?php echo $_smarty_tpl->tpl_vars['encoded_img']->value;?>
+;
   var categories = [];
   for(var i=0; i < encodedImg.length; i++) {
     var inArray = false;
@@ -76,4 +101,7 @@
     }
   }
 
-</script>
+<?php echo '</script'; ?>
+>
+<?php }
+}

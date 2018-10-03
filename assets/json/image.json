@@ -7,7 +7,7 @@
     "forward" : 2,
     "right" : 0,
     "behind" : 0,
-    "categorie" : "",
+    "category" : "Others",
     "description" : "Batiment HEP"
   },
   {
@@ -18,7 +18,7 @@
     "forward" : 0,
     "right" : 3,
     "behind" : 1,
-    "categorie" : "",
+    "category" : "Administration",
     "description" : "Accueil"
   },
   {
@@ -29,7 +29,7 @@
     "forward" : 4,
     "right" : 0,
     "behind" : 2,
-    "categorie" : "",
+    "category" : "Living places",
     "description" : "Salle de vie"
   },
   {
@@ -40,7 +40,7 @@
     "forward" : 5,
     "right" : 7,
     "behind" : 3,
-    "categorie" : "",
+    "category" : "Living places",
     "description" : "Escalier salle de vie"
   }
 ]

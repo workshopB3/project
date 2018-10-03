@@ -1,5 +1,8 @@
 <site>
+  <menu>
   <accueil>Accueil</accueil>
   <navigation>Navigation</navigation>
   <contact>Contact</contact>
+  <ecole>Our schools</ecole>
+  </menu>
 </site>

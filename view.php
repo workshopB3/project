@@ -17,6 +17,11 @@ class View{
     $this->smarty->assign('encoded_img', json_encode($img));
     $this->display('navigation');
   }
+  public function displayNavigationChoice($img){
+    $this->smarty->assign('img', $img);
+    $this->smarty->assign('encoded_img', json_encode($img));
+    $this->display('navigation_choice');
+  }
   private function display($html){
     $this->smarty->display('html/'.$html.'.html');
     $this->smarty->display('html/footer.html');
