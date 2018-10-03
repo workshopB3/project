@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-02 16:34:00
+/* Smarty version 3.1.33, created on 2018-10-02 16:36:23
   from '/Users/adrien/Sites/workshop/html/onepage/schools.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb381d846e9c0_91223976',
+  'unifunc' => 'content_5bb38267424979_52879025',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b6a674b6e2be4be320962b9b648f5a08582566c6' => 
     array (
       0 => '/Users/adrien/Sites/workshop/html/onepage/schools.html',
-      1 => 1538490838,
+      1 => 1538490954,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb381d846e9c0_91223976 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb38267424979_52879025 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="section" data-anchor="schools">
   <h1>Nos écoles</h1>
 </div>
@@ -50,7 +50,7 @@ function content_5bb381d846e9c0_91223976 (Smarty_Internal_Template $_smarty_tpl)
       </p>
 </div>
     <div class="section">
-      <img src="https://i.tween.pics/v1/https://s3-eu-west-1.amazonaws.com/assets.atout-on-line.com/images/commerce/2015/fiches_ecoles/igefi_logo.jpg" width="260px" />
+      <img class="rotate" src="https://i.tween.pics/v1/https://s3-eu-west-1.amazonaws.com/assets.atout-on-line.com/images/commerce/2015/fiches_ecoles/igefi_logo.jpg" width="260px" />
       <p class="description">
         L’IGEFI – Institut de Gestion et d’Études Financières – est un établissement d’enseignement supérieur fondé en 1993,
         qui forme des professionnels de haut niveau aux métiers de l’expertise comptable, de la gestion, de la finance et de la paie.
