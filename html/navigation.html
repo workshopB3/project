@@ -1,23 +1,29 @@
 <link rel="stylesheet" href="web/css/navigation.css">
-<div id="navImg" style="background:url({$img[0]['url']});height:700px;background-size:cover;background-position:center;background-repeat:no-repeat;">
-  <a href="/">Retour</a>
-  <img id="arrowLeft" class="fleche" style="left:5%;top:45%" src="./assets/imgs/fleche_gauche.png" onclick="changeSrcImg('left');"></img>
-  <img id="arrowRight" class="fleche" style="right:5%;top:45%" src="./assets/imgs/fleche_droite.png" onclick="changeSrcImg('right');"></img>
-  <img id="arrowForward" class="fleche" style="left:45%;top:5%" src="./assets/imgs/fleche_haut.png" onclick="changeSrcImg('forward');"></img>
-  <img id="arrowBehind" class="fleche" style="left:45%;bottom:5%" src="./assets/imgs/fleche_bas.png" onclick="changeSrcImg('behind');"></img>
+<div class="content">
+  <div id="navImg" style="background:url({$img[0]['url']});height:630px;background-size:cover;background-position:center;background-repeat:no-repeat;">
+    <a class="linkBtn" href="/">Retour site</a>
+    <img id="arrowLeft" class="fleche" style="left:5%;top:45%" src="./assets/imgs/fleche_gauche.png" onclick="changeSrcImg('left');"></img>
+    <img id="arrowRight" class="fleche" style="right:5%;top:45%" src="./assets/imgs/fleche_droite.png" onclick="changeSrcImg('right');"></img>
+    <img id="arrowForward" class="fleche" style="left:45%;top:5%" src="./assets/imgs/fleche_haut.png" onclick="changeSrcImg('forward');"></img>
+    <img id="arrowBehind" class="fleche" style="left:45%;bottom:15%" src="./assets/imgs/fleche_bas.png" onclick="changeSrcImg('behind');"></img>
+  </div>
+  <div style="margin-top: 20px;"class="pictureDesc">
+    <p id="pictureDesc"></p>
+  </div>
 </div>
 <script language="javascript">
   var imgIndex = 0;
   var encodedImg = {$encoded_img};
   var currentObj = encodedImg[imgIndex];
+  document.getElementById("pictureDesc").innerHTML = currentObj.description;
   displayArrows(currentObj);
 
-  function loadPathfinding(placeName) {
+  function loadPathfinding(id) {
     var img = {$encoded_img};
     var objToFind = null;
     for (var i = 0; i<img.length; i++) {
       var obj = img[i];
-      if(obj.name == placeName) {
+      if(obj.id == id) {
         objToFind = obj;
         break;
       }
@@ -69,12 +75,18 @@
       }
     }
     document.getElementById("navImg").style.backgroundImage = "url(" + currentObj.url + ")";
+    document.getElementById("pictureDesc").innerHTML = currentObj.description;
     displayArrows(currentObj);
   }
 
   function displayArrows(obj) {
     if(obj.forward != 0) {
       document.getElementById("arrowForward").style.display = "block";
+      for (var i = 0; i<encodedImg.length; i++) {
+        if(obj.forward == encodedImg[i].id) {
+          document.getElementById("arrowForward").title = encodedImg[i].name;
+        }
+      }
     }
     else {
       document.getElementById("arrowForward").style.display = "none";
@@ -82,6 +94,11 @@
 
     if(obj.behind != 0) {
       document.getElementById("arrowBehind").style.display = "block";
+      for (var i = 0; i<encodedImg.length; i++) {
+        if(obj.behind == encodedImg[i].id) {
+          document.getElementById("arrowBehind").title = encodedImg[i].name;
+        }
+      }
     }
     else {
       document.getElementById("arrowBehind").style.display = "none";
@@ -89,6 +106,11 @@
 
     if(obj.left != 0) {
       document.getElementById("arrowLeft").style.display = "block";
+      for (var i = 0; i<encodedImg.length; i++) {
+        if(obj.left == encodedImg[i].id) {
+          document.getElementById("arrowLeft").title = encodedImg[i].name;
+        }
+      }
     }
     else {
       document.getElementById("arrowLeft").style.display = "none";
@@ -96,6 +118,11 @@
 
     if(obj.right != 0) {
       document.getElementById("arrowRight").style.display = "block";
+      for (var i = 0; i<encodedImg.length; i++) {
+        if(obj.right == encodedImg[i].id) {
+          document.getElementById("arrowRight").title = encodedImg[i].name;
+        }
+      }
     }
     else {
       document.getElementById("arrowRight").style.display = "none";
