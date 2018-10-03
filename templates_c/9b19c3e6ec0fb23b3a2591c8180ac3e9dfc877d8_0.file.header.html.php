@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-03 09:32:39
+/* Smarty version 3.1.33, created on 2018-10-03 09:51:33
   from '/Users/adrien/Sites/workshop/html/header.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb470970b94d4_47889720',
+  'unifunc' => 'content_5bb47505b169c7_35188889',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9b19c3e6ec0fb23b3a2591c8180ac3e9dfc877d8' => 
     array (
       0 => '/Users/adrien/Sites/workshop/html/header.html',
-      1 => 1538551955,
+      1 => 1538553091,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb470970b94d4_47889720 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb47505b169c7_35188889 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -42,8 +42,8 @@ function content_5bb470970b94d4_47889720 (Smarty_Internal_Template $_smarty_tpl)
 	<nav id="menu">
     <ul>
         <li><a href="index.php">Accueil</a></li>
-				<li><a href="index.php#schools">Nos écoles</a></li>
-				<li><a href="index.php#specificities">Les richesses du campus</a></li>
+				<li><a href="#schools">Nos écoles</a></li>
+				<li><a href="#specificities">Les richesses du campus</a></li>
         <li><a href="index.php?page=navigation">Navigation</a></li>
 				<li><a href="index.php#contact">Contact</a></li>
     </ul>

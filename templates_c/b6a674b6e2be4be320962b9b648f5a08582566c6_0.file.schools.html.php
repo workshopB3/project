@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-02 16:36:23
+/* Smarty version 3.1.33, created on 2018-10-03 09:47:23
   from '/Users/adrien/Sites/workshop/html/onepage/schools.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb38267424979_52879025',
+  'unifunc' => 'content_5bb4740b876a11_54936727',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b6a674b6e2be4be320962b9b648f5a08582566c6' => 
     array (
       0 => '/Users/adrien/Sites/workshop/html/onepage/schools.html',
-      1 => 1538490954,
+      1 => 1538552831,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb38267424979_52879025 (Smarty_Internal_Template $_smarty_tpl) {
-?><div class="section" data-anchor="schools">
+function content_5bb4740b876a11_54936727 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="section">
   <h1>Nos écoles</h1>
 </div>
 <div class="section">
