@@ -4,9 +4,20 @@
 }
 .fleche{
   z-index: 10;
-  position: fixed;
+  position: absolute;
   width:10%;
   height:12%;
   display: block;
   opacity: 0.7;
+}
+.pictureDesc {
+  border-style: solid;
+  width: auto;
+  height: auto;
+  text-align: center;
+}
+.content {
+  width: 100%;
+  height: 100%;
+  position: relative;
 }
