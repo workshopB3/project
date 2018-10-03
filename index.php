@@ -1,9 +1,15 @@
 <?php
-ob_start ( 'ob_gzhandler' );
+session_start();
+if (empty($_SESSION["lang"])){
+  $_SESSION["lang"] = 'fr';
+}
 register_shutdown_function ( 'ob_end_flush' );
 include ('controller.php');
-$page = !empty($_GET["page"]) ? $_GET["page"] : 'home';
+if (!empty($_GET["lang"])){
+  $_SESSION["lang"] = $_GET["lang"];
+}
 $controller = new Controller();
+$page = !empty($_GET["page"]) ? $_GET["page"] : 'home';
 switch ($page){
   case 'navigation': $controller->navigation();
   break;
@@ -11,6 +17,7 @@ switch ($page){
   break;
   default: $controller->home();
 }
+var_dump($_SESSION);
 
 
 ?>
