@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-03 09:21:41
+/* Smarty version 3.1.33, created on 2018-10-03 10:31:34
   from 'C:\wamp\www\workshop\project\html\navigation.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb46e05142821_98215091',
+  'unifunc' => 'content_5bb47e66a51505_88223533',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'd76ccdd73ed802cfe3671ba9b3cb7ed3ff0dd528' => 
     array (
       0 => 'C:\\wamp\\www\\workshop\\project\\html\\navigation.html',
-      1 => 1538551235,
+      1 => 1538555487,
       2 => 'file',
     ),
   ),
@@ -20,13 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb46e05142821_98215091 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb47e66a51505_88223533 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="web/css/navigation.css">
-<div style="background:url(<?php echo $_smarty_tpl->tpl_vars['img']->value[0]['url'];?>
+<div id="navImg" style="background:url(<?php echo $_smarty_tpl->tpl_vars['img']->value[0]['url'];?>
 );height:700px;background-size:cover;background-position:center;background-repeat:no-repeat;">
-  <!-- <img class="navImg" id="navImg" src="<?php echo $_smarty_tpl->tpl_vars['img']->value[0]['url'];?>
-"></img>-->
-  <img id="arrowLeft" class="fleche" style="left:5%;margin-top:45%" src="./assets/imgs/fleche_gauche.png" onclick="changeSrcImg('left');"></img>
+  <a href="/">Retour</a>
+  <img id="arrowLeft" class="fleche" style="left:5%;top:45%" src="./assets/imgs/fleche_gauche.png" onclick="changeSrcImg('left');"></img>
   <img id="arrowRight" class="fleche" style="right:5%;top:45%" src="./assets/imgs/fleche_droite.png" onclick="changeSrcImg('right');"></img>
   <img id="arrowForward" class="fleche" style="left:45%;top:5%" src="./assets/imgs/fleche_haut.png" onclick="changeSrcImg('forward');"></img>
   <img id="arrowBehind" class="fleche" style="left:45%;bottom:5%" src="./assets/imgs/fleche_bas.png" onclick="changeSrcImg('behind');"></img>
@@ -50,7 +49,7 @@ function content_5bb46e05142821_98215091 (Smarty_Internal_Template $_smarty_tpl)
         break;
       }
     }
-    document.getElementById("navImg").src = currentObj.url;
+    document.getElementById("navImg").style.backgroundImage = "url(" + currentObj.url + ")";
     displayArrows(currentObj);
   }
 
