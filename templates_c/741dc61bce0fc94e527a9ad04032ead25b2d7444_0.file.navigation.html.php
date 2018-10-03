@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-03 10:30:50
+/* Smarty version 3.1.33, created on 2018-10-03 11:06:48
   from '/Users/ronanlaplaud/Documents/project/html/navigation.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb47e3aae37a8_57214198',
+  'unifunc' => 'content_5bb486a852a1a4_15064728',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '741dc61bce0fc94e527a9ad04032ead25b2d7444' => 
     array (
       0 => '/Users/ronanlaplaud/Documents/project/html/navigation.html',
-      1 => 1538555413,
+      1 => 1538557606,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,9 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb47e3aae37a8_57214198 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb486a852a1a4_15064728 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="web/css/navigation.css">
-<div id="navImg" style="background:url(<?php echo $_smarty_tpl->tpl_vars['img']->value[0]['url'];?>
+<div onclick="loadPathfinding('Accueil');" id="navImg" style="background:url(<?php echo $_smarty_tpl->tpl_vars['img']->value[0]['url'];?>
 );height:700px;background-size:cover;background-position:center;background-repeat:no-repeat;">
   <a href="/">Retour</a>
   <img id="arrowLeft" class="fleche" style="left:5%;top:45%" src="./assets/imgs/fleche_gauche.png" onclick="changeSrcImg('left');"></img>
@@ -38,6 +38,52 @@ function content_5bb47e3aae37a8_57214198 (Smarty_Internal_Template $_smarty_tpl)
   var currentObj = encodedImg[imgIndex];
   displayArrows(currentObj);
 
+  function loadPathfinding(placeName) {
+    var img = <?php echo $_smarty_tpl->tpl_vars['encoded_img']->value;?>
+;
+    var objToFind = null;
+    for (var i = 0; i<img.length; i++) {
+      var obj = img[i];
+      if(obj.name == placeName) {
+        objToFind = obj;
+        break;
+      }
+    }
+    console.log("OBJTOFIND = " + objToFind);
+
+    var id = 0;
+    var thisObj = objToFind;
+    encodedImg = [];
+    thisObj.forward = 0;
+    thisObj.left = 0;
+    thisObj.right = 0;
+    encodedImg.push(thisObj);
+    while(id != 1) {
+      for (var i = 0; i<img.length; i++) {
+        var obj = img[i];
+        if(obj.id == thisObj.behind) {
+          if(obj.forward == thisObj.id) {
+            obj.right = 0;
+            obj.left = 0;
+          }
+          else if (obj.left == thisObj.id) {
+            obj.right = 0;
+            obj.forward = 0;
+          }
+          else if (obj.right == thisObj.id) {
+            obj.forward = 0;
+            obj.left = 0;
+          }
+          
+          objToFind = obj;
+          id = obj.id;
+          encodedImg.push(obj);
+          break;
+        }
+      }
+    }
+    console.log("NEW IMGS = " + encodedImg);
+  }
 
   function changeSrcImg(direction) {
     var currentObj = encodedImg[imgIndex];
