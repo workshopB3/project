@@ -17,7 +17,6 @@ switch ($page){
   break;
   default: $controller->home();
 }
-var_dump($_SESSION);
 
 
 ?>
