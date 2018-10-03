@@ -1,4 +1,2 @@
 
-  $('#fullpage').fullpage({
-		scrollHorizontally: true
-	});
+  $('#fullpage').fullpage();

@@ -1,18 +1,30 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.33, created on 2018-10-02 16:46:57
+=======
+/* Smarty version 3.1.33, created on 2018-10-03 09:34:38
+>>>>>>> 1015d6b82cb57d596aae2a48ab0691a5186368d2
   from '/Users/ronanlaplaud/Documents/project/html/navigation.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
+<<<<<<< HEAD
   'unifunc' => 'content_5bb384e13a3737_13038994',
+=======
+  'unifunc' => 'content_5bb4710e551607_26998559',
+>>>>>>> 1015d6b82cb57d596aae2a48ab0691a5186368d2
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '741dc61bce0fc94e527a9ad04032ead25b2d7444' => 
     array (
       0 => '/Users/ronanlaplaud/Documents/project/html/navigation.html',
+<<<<<<< HEAD
       1 => 1538491556,
+=======
+      1 => 1538552070,
+>>>>>>> 1015d6b82cb57d596aae2a48ab0691a5186368d2
       2 => 'file',
     ),
   ),
@@ -20,6 +32,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_5bb384e13a3737_13038994 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="web/css/navigation.css">
   <img class="navImg" id="navImg" width="800" height="800" style="position: absolute;z-index: 1;width:100%; height:100%;" src="<?php echo $_smarty_tpl->tpl_vars['img']->value[0]['url'];?>
@@ -82,5 +95,10 @@ function content_5bb384e13a3737_13038994 (Smarty_Internal_Template $_smarty_tpl)
   }
 <?php echo '</script'; ?>
 >
+=======
+function content_5bb4710e551607_26998559 (Smarty_Internal_Template $_smarty_tpl) {
+echo $_smarty_tpl->tpl_vars['img_url']->value;?>
+
+>>>>>>> 1015d6b82cb57d596aae2a48ab0691a5186368d2
 <?php }
 }

@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-02 15:26:52
+/* Smarty version 3.1.33, created on 2018-10-03 09:17:46
   from '/Users/adrien/Sites/workshop/html/onepage/specificities.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb3721ce028c1_38944511',
+  'unifunc' => 'content_5bb46d1aea6704_31208539',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '82fc4616448c0952b5b8897337ed4eb695fa7acd' => 
     array (
       0 => '/Users/adrien/Sites/workshop/html/onepage/specificities.html',
-      1 => 1538486810,
+      1 => 1538551062,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,8 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb3721ce028c1_38944511 (Smarty_Internal_Template $_smarty_tpl) {
-?><div class="section">
+function content_5bb46d1aea6704_31208539 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="section" data-anchor="specificities">
   <h1>Un campus personnalisé</h1>
 </div>
 <div class="section">

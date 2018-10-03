@@ -1,18 +1,30 @@
 <?php
+<<<<<<< HEAD
 /* Smarty version 3.1.33, created on 2018-10-02 16:55:03
+=======
+/* Smarty version 3.1.33, created on 2018-10-03 09:34:38
+>>>>>>> 1015d6b82cb57d596aae2a48ab0691a5186368d2
   from '/Users/ronanlaplaud/Documents/project/html/header.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
+<<<<<<< HEAD
   'unifunc' => 'content_5bb386c7c1eba4_12132378',
+=======
+  'unifunc' => 'content_5bb4710e53a390_94433381',
+>>>>>>> 1015d6b82cb57d596aae2a48ab0691a5186368d2
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'fde9a91149ef94e24696d24bc558935b356688a0' => 
     array (
       0 => '/Users/ronanlaplaud/Documents/project/html/header.html',
+<<<<<<< HEAD
       1 => 1538492089,
+=======
+      1 => 1538552070,
+>>>>>>> 1015d6b82cb57d596aae2a48ab0691a5186368d2
       2 => 'file',
     ),
   ),
@@ -20,7 +32,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
+<<<<<<< HEAD
 function content_5bb386c7c1eba4_12132378 (Smarty_Internal_Template $_smarty_tpl) {
+=======
+function content_5bb4710e53a390_94433381 (Smarty_Internal_Template $_smarty_tpl) {
+>>>>>>> 1015d6b82cb57d596aae2a48ab0691a5186368d2
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -43,6 +59,10 @@ function content_5bb386c7c1eba4_12132378 (Smarty_Internal_Template $_smarty_tpl)
 				<li data-menuanchor="Ecoles"><a href="#">Les Richesses du campus</a></li>
         <li data-menuanchor="Navigation"><a href="index.php?page=navigation">Navigation</a></li>
     </ul>
+<<<<<<< HEAD
 	</nav>
+=======
+</nav>
+>>>>>>> 1015d6b82cb57d596aae2a48ab0691a5186368d2
 <?php }
 }
