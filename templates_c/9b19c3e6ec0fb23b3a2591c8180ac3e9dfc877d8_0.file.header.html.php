@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-02 16:02:43
+/* Smarty version 3.1.33, created on 2018-10-03 09:32:39
   from '/Users/adrien/Sites/workshop/html/header.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb37a83551667_20059308',
+  'unifunc' => 'content_5bb470970b94d4_47889720',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '9b19c3e6ec0fb23b3a2591c8180ac3e9dfc877d8' => 
     array (
       0 => '/Users/adrien/Sites/workshop/html/header.html',
-      1 => 1538488900,
+      1 => 1538551955,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb37a83551667_20059308 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb470970b94d4_47889720 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -36,13 +36,18 @@ function content_5bb37a83551667_20059308 (Smarty_Internal_Template $_smarty_tpl)
 >
 </head>
 <body>
-  <nav id="menu">
+	<?php if (!empty($_GET['page']) && $_GET['page'] == 'navigation') {?>
+
+	<?php } else { ?>
+	<nav id="menu">
     <ul>
-        <li data-menuanchor="Accueil"><a href="index.php">Accueil</a></li>
-				<li data-menuanchor="Ecoles"><a href="#ecoles">Nos écoles</a></li>
-				<li data-menuanchor="Ecoles"><a href="#">Les Richesses du campus</a></li>
-        <li data-menuanchor="Navigation"><a href="index.php?page=navigation">Navigation</a></li>
+        <li><a href="index.php">Accueil</a></li>
+				<li><a href="index.php#schools">Nos écoles</a></li>
+				<li><a href="index.php#specificities">Les richesses du campus</a></li>
+        <li><a href="index.php?page=navigation">Navigation</a></li>
+				<li><a href="index.php#contact">Contact</a></li>
     </ul>
 </nav>
-<?php }
+	<?php }
+}
 }
