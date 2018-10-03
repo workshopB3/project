@@ -1,11 +1,29 @@
-<<<<<<< HEAD
-<div class="section" data-anchor="schools" style = "background-color:#4bbfc3">
-  <h1>Les écoles partenaires</h1>
-=======
-<div class="section" data-anchor="schools" body style = "background-color:#4bbfc3">
+<?php
+/* Smarty version 3.1.33, created on 2018-10-03 11:38:17
+  from 'C:\wamp64\www\workshop\html\onepage\schools.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5bb4aa29a2d996_83383848',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    '7a50f95474f1db6706e286faba73a8c941ca357e' => 
+    array (
+      0 => 'C:\\wamp64\\www\\workshop\\html\\onepage\\schools.html',
+      1 => 1538566695,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5bb4aa29a2d996_83383848 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="section" data-anchor="schools" body style = "background-color:#4bbfc3">
   <h1>Nos écoles</h1>
   </br>
->>>>>>> 3e304240ccc4d479ba22ced2e2404a957c5fb379
   <p class="description">
     6 écoles se partagent le campus. Elles permettent de se former sur un éventail de métiers conséquent.
   </p>
@@ -59,3 +77,5 @@
         <br /><br /><a href="http://www.wis-ecoles.com/">www.wis-ecoles.com/</a>
       </p>
     </div>
+<?php }
+}
