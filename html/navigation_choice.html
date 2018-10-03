@@ -1,0 +1,30 @@
+<button id="libre" onclick="windows.location.href='./index.php?page=navigation'">Visite libre</button>
+<button id="guidee" onclick="document.getElementById('dropdown1').style.display='block';">Visite guidée</button>
+
+<form action="#">
+  <select id="dropdown1" class='alt_list' onchange="onChangeDropDown()" name="dropdown1">
+    <option value='lifePlaces'>
+      Lieux de vies
+    </option>
+    <option value='workPlaces'>
+      Lieux de travail
+    </option>
+    <option value='administrations'>
+      Administrations
+    </option>
+    <option value='toilets'>
+      Toilettes
+    </option>
+  </select>
+  <button id="buttonSubmit" style="display:none;">
+    Commencez la visite
+  </button>
+</form>
+
+<script language="javascript">
+  var encodedImg = {$encoded_img};
+
+  function onChangeDropDown(){
+    var elementDropDown = document.getElementById('dropdown1').options[document.getElementById('dropdown1').selectedIndex].value;
+  }
+</script>

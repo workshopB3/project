@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-03 08:39:21
+/* Smarty version 3.1.33, created on 2018-10-03 11:20:33
   from 'C:\wamp\www\workshop\project\html\header.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb464197c3ad0_87759144',
+  'unifunc' => 'content_5bb489e1c6e943_06717320',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '206ad1c293127caa3b8120198dbf95e23175c972' => 
     array (
       0 => 'C:\\wamp\\www\\workshop\\project\\html\\header.html',
-      1 => 1538548759,
+      1 => 1538553774,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb464197c3ad0_87759144 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb489e1c6e943_06717320 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -36,18 +36,16 @@ function content_5bb464197c3ad0_87759144 (Smarty_Internal_Template $_smarty_tpl)
 >
 </head>
 <body>
-  <nav id="menu">
+	<?php if (!empty($_GET['page']) && $_GET['page'] == 'navigation') {?>
+	<?php } else { ?>
+	<nav id="menu">
     <ul>
-        <li data-menuanchor="Accueil"><a href="index.php"><?php echo $_smarty_tpl->tpl_vars['XMLfile']->value->accueil;?>
-</a></li>
-				<li data-menuanchor="Ecoles"><a href="#ecoles"><?php echo $_smarty_tpl->tpl_vars['XMLfile']->value->ecole;?>
-</a></li>
-				<li data-menuanchor="Richesses"><a href="#"><?php echo $_smarty_tpl->tpl_vars['XMLfile']->value->richesseCampus;?>
-</a></li>
-        <li data-menuanchor="Navigation"><a href="index.php?page=navigation"><?php echo $_smarty_tpl->tpl_vars['XMLfile']->value->navigation;?>
-</a></li>
+        <li data-menuanchor="Accueil"><a href="index.php">Accueil</a></li>
+				<li data-menuanchor="Ecoles"><a href="#ecoles">Nos écoles</a></li>
+				<li data-menuanchor="Ecoles"><a href="#">Les Richesses du campus</a></li>
+        <li data-menuanchor="Navigation"><a href="index.php?page=navigation">Navigation</a></li>
     </ul>
 	</nav>
-	<div id="content">
-<?php }
+	<?php }
+}
 }
