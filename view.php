@@ -4,6 +4,9 @@ class View{
   private $smarty;
   public function __construct(){
     $this->smarty = new Smarty();
+    $XMLfile = new SimpleXMLElement("./assets/lang/fr.xml",NULL,TRUE);
+//    $XMLfile = new SimpleXMLElement('./assets.lang/en.xml',NULL,TRUE);
+    $this->smarty->assign('XMLfile',$XMLfile);
     $this->display('header');
   }
   public function displayOnePage(){
