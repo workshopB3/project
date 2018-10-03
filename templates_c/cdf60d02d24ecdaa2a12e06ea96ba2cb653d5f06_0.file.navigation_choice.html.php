@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-03 15:14:30
+/* Smarty version 3.1.33, created on 2018-10-03 15:16:32
   from '/Users/ronanlaplaud/Documents/project/html/navigation_choice.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb4c0b6eb8e06_02680712',
+  'unifunc' => 'content_5bb4c130332cf1_23880129',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cdf60d02d24ecdaa2a12e06ea96ba2cb653d5f06' => 
     array (
       0 => '/Users/ronanlaplaud/Documents/project/html/navigation_choice.html',
-      1 => 1538572469,
+      1 => 1538572588,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb4c0b6eb8e06_02680712 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb4c130332cf1_23880129 (Smarty_Internal_Template $_smarty_tpl) {
 ?><button id="libre" onclick="window.location.href='/index.php?page=navigation'">Visite libre</button>
 <button id="guidee" onclick="document.getElementById('dropdownCat').style.display='block';">Visite guidée</button>
 
@@ -31,7 +31,7 @@ function content_5bb4c0b6eb8e06_02680712 (Smarty_Internal_Template $_smarty_tpl)
   <select id="dropdownImg" class='alt_list' name="dropdownImg" onchange="onChangePlace();" style="display:none;">
     <option></option>
   </select>
-  <a id="navBtn" href="/index.php?page=navigation" style="display:none;">
+  <a id="navBtn" href="/index.php?page=navigation&id=" style="display:none;">
     Commencez la visite
   </a>
 </form>
@@ -97,7 +97,7 @@ function content_5bb4c0b6eb8e06_02680712 (Smarty_Internal_Template $_smarty_tpl)
     var imgId = select.options[select.selectedIndex].value;
     if(imgId != 0) {
       document.getElementById("navBtn").style.display = "block";
-      document.getElementById("navBtn").value = imgId;
+      document.getElementById("navBtn").href += imgId;
     }
   }
 

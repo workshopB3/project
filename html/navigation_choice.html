@@ -8,7 +8,7 @@
   <select id="dropdownImg" class='alt_list' name="dropdownImg" onchange="onChangePlace();" style="display:none;">
     <option></option>
   </select>
-  <a id="navBtn" href="/index.php?page=navigation" style="display:none;">
+  <a id="navBtn" href="/index.php?page=navigation&id=" style="display:none;">
     Commencez la visite
   </a>
 </form>
@@ -72,7 +72,7 @@
     var imgId = select.options[select.selectedIndex].value;
     if(imgId != 0) {
       document.getElementById("navBtn").style.display = "block";
-      document.getElementById("navBtn").value = imgId;
+      document.getElementById("navBtn").href += imgId;
     }
   }
 

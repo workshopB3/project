@@ -1,26 +1,26 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-03 13:38:30
+/* Smarty version 3.1.33, created on 2018-10-03 17:00:06
   from '/Users/ronanlaplaud/Documents/project/html/navigation.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb4aa36677ce6_41770820',
+  'unifunc' => 'content_5bb4d9764659c3_30366547',
   'has_nocache_code' => false,
-  'file_dependency' =>
+  'file_dependency' => 
   array (
-    '741dc61bce0fc94e527a9ad04032ead25b2d7444' =>
+    '741dc61bce0fc94e527a9ad04032ead25b2d7444' => 
     array (
       0 => '/Users/ronanlaplaud/Documents/project/html/navigation.html',
-      1 => 1538566709,
+      1 => 1538578798,
       2 => 'file',
     ),
   ),
-  'includes' =>
+  'includes' => 
   array (
   ),
 ),false)) {
-function content_5bb4aa36677ce6_41770820 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb4d9764659c3_30366547 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="web/css/navigation.css">
 <div class="content">
   <div id="navImg" style="background:url(<?php echo $_smarty_tpl->tpl_vars['img']->value[0]['url'];?>
@@ -37,10 +37,47 @@ function content_5bb4aa36677ce6_41770820 (Smarty_Internal_Template $_smarty_tpl)
 </div>
 <?php echo '<script'; ?>
  language="javascript">
+
+  function getUrlID() {
+    var url = window.location.search.substring(1);
+    var sURLVariables = url.split('&');
+
+    for (var i = 0; i < sURLVariables.length; i++) {
+      var sParameterName = sURLVariables[i].split('=');
+      if(sParameterName[0] == 'id') {
+        return sParameterName[1];
+      }
+    }
+    return 0;
+  }
+
+  var encodedImg = [];
+  var currentObj = [];
   var imgIndex = 0;
-  var encodedImg = <?php echo $_smarty_tpl->tpl_vars['encoded_img']->value;?>
+
+  var urlId = getUrlID();
+  if(urlId != 0) {
+    if(urlId > 1) {
+      currentObj = loadPathfinding(urlId);
+    }
+    else {
+      encodedImg = <?php echo $_smarty_tpl->tpl_vars['encoded_img']->value;?>
 ;
-  var currentObj = encodedImg[imgIndex];
+      currentObj = encodedImg[imgIndex];
+      currentObj.forward = 0;
+      currentObj.left = 0;
+      currentObj.right = 0;
+      currentObj.behind = 0;
+      encodedImg = [];
+      encodedImg.push(currentObj);
+    }
+  }
+  else {
+    encodedImg = <?php echo $_smarty_tpl->tpl_vars['encoded_img']->value;?>
+;
+    currentObj = encodedImg[imgIndex];
+  }
+
   document.getElementById("pictureDesc").innerHTML = currentObj.description;
   displayArrows(currentObj);
 
@@ -55,7 +92,6 @@ function content_5bb4aa36677ce6_41770820 (Smarty_Internal_Template $_smarty_tpl)
         break;
       }
     }
-    console.log("OBJTOFIND = " + objToFind);
 
     var id = 0;
     var thisObj = objToFind;
@@ -64,6 +100,8 @@ function content_5bb4aa36677ce6_41770820 (Smarty_Internal_Template $_smarty_tpl)
     thisObj.left = 0;
     thisObj.right = 0;
     encodedImg.push(thisObj);
+
+    var objToReturn = [];
     while(id != 1) {
       for (var i = 0; i<img.length; i++) {
         var obj = img[i];
@@ -81,17 +119,24 @@ function content_5bb4aa36677ce6_41770820 (Smarty_Internal_Template $_smarty_tpl)
             obj.left = 0;
           }
 
-          objToFind = obj;
+          thisObj = obj;
           id = obj.id;
           encodedImg.push(obj);
+          if(obj.id == 1) {
+            objToReturn = obj;
+            imgIndex = encodedImg.length - 1;
+          }
           break;
         }
       }
     }
-    console.log("NEW IMGS = " + encodedImg);
+
+    return objToReturn;
   }
 
   function changeSrcImg(direction) {
+    console.log(encodedImg);
+    console.log(imgIndex);
     var currentObj = encodedImg[imgIndex];
     for (var i = 0; i<encodedImg.length; i++) {
       var obj = encodedImg[i];
