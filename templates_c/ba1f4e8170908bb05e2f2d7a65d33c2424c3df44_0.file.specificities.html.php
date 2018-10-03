@@ -1,4 +1,27 @@
-<div class="section" data-anchor="specificities" body style = "background-color:#4bbfc3">
+<?php
+/* Smarty version 3.1.33, created on 2018-10-03 11:34:45
+  from 'C:\wamp64\www\workshop\html\onepage\specificities.html' */
+
+/* @var Smarty_Internal_Template $_smarty_tpl */
+if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
+  'version' => '3.1.33',
+  'unifunc' => 'content_5bb4a9558ee308_10916585',
+  'has_nocache_code' => false,
+  'file_dependency' => 
+  array (
+    'ba1f4e8170908bb05e2f2d7a65d33c2424c3df44' => 
+    array (
+      0 => 'C:\\wamp64\\www\\workshop\\html\\onepage\\specificities.html',
+      1 => 1538566483,
+      2 => 'file',
+    ),
+  ),
+  'includes' => 
+  array (
+  ),
+),false)) {
+function content_5bb4a9558ee308_10916585 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="section" data-anchor="specificities" body style = "background-color:#4bbfc3">
   <h1>Les richesses du campus</h1>
   </br>
   <p class="description">
@@ -33,3 +56,5 @@
   <p class="description">En plus des salles de cours, des espaces sont mis à disposition au sein des locaux du campus pour travailler ou se divertir.
                           On trouve notamment un espace pour jouer à la console ainsi qu’une table de ping pong. </p>
 </div>
+<?php }
+}

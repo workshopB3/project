@@ -4,9 +4,18 @@ body{
 .description{
   font-size: 18px;
   margin-top: 30px;
+  border-width:2px;
+  border-color:#4bbfc3;
+  border-style:dashed;
+  border-radius: 30px;
+  padding:20px;
 }
 h1{
   font-size: 64px;
+  margin: 0;
+}
+h2{
+  font-size: 32px;
   margin: 0;
 }
 .section{
