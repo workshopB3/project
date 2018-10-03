@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-03 17:00:06
+/* Smarty version 3.1.33, created on 2018-10-03 22:04:45
   from '/Users/ronanlaplaud/Documents/project/html/navigation.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb4d9764659c3_30366547',
+  'unifunc' => 'content_5bb520dd7063f9_16345558',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '741dc61bce0fc94e527a9ad04032ead25b2d7444' => 
     array (
       0 => '/Users/ronanlaplaud/Documents/project/html/navigation.html',
-      1 => 1538578798,
+      1 => 1538597084,
       2 => 'file',
     ),
   ),
@@ -20,8 +20,11 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb4d9764659c3_30366547 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb520dd7063f9_16345558 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="web/css/navigation.css">
+<div style="margin-bottom: 20px;"class="pictureDesc">
+  <p id="challenge"></p>
+</div>
 <div class="content">
   <div id="navImg" style="background:url(<?php echo $_smarty_tpl->tpl_vars['img']->value[0]['url'];?>
 );height:630px;background-size:cover;background-position:center;background-repeat:no-repeat;">
@@ -38,29 +41,47 @@ function content_5bb4d9764659c3_30366547 (Smarty_Internal_Template $_smarty_tpl)
 <?php echo '<script'; ?>
  language="javascript">
 
-  function getUrlID() {
+  function getUrlParam(param) {
     var url = window.location.search.substring(1);
     var sURLVariables = url.split('&');
 
     for (var i = 0; i < sURLVariables.length; i++) {
       var sParameterName = sURLVariables[i].split('=');
-      if(sParameterName[0] == 'id') {
+      if(sParameterName[0] == param) {
         return sParameterName[1];
       }
     }
     return 0;
   }
 
+
   var encodedImg = [];
   var currentObj = [];
   var imgIndex = 0;
 
-  var urlId = getUrlID();
+  var urlChallenge = getUrlParam("challenge");
+  if(urlChallenge == "true") {
+    var arrayImg = <?php echo $_smarty_tpl->tpl_vars['encoded_img']->value;?>
+;
+    var ind = Math.floor(Math.random() * arrayImg.length);
+    while(ind == 0) {
+      ind = Math.floor(Math.random() * arrayImg.length);
+    }
+    console.log(arrayImg[ind]);
+    loadPathfinding(arrayImg[ind].id);
+    var countClicks = encodedImg.length;
+    document.getElementById("challenge").innerHTML = "Challenge : Atteindre " + arrayImg[ind].name + " en " + countClicks + " ou moins";
+  }
+
+  var imgIndex = 0;
+
+  var urlId = getUrlParam("id");
   if(urlId != 0) {
     if(urlId > 1) {
       currentObj = loadPathfinding(urlId);
     }
     else {
+      console.log("else");
       encodedImg = <?php echo $_smarty_tpl->tpl_vars['encoded_img']->value;?>
 ;
       currentObj = encodedImg[imgIndex];
@@ -78,8 +99,59 @@ function content_5bb4d9764659c3_30366547 (Smarty_Internal_Template $_smarty_tpl)
     currentObj = encodedImg[imgIndex];
   }
 
+  console.log(encodedImg);
+  console.log(currentObj);
+
   document.getElementById("pictureDesc").innerHTML = currentObj.description;
   displayArrows(currentObj);
+
+  function loadPath(id) {
+    var img = <?php echo $_smarty_tpl->tpl_vars['encoded_img']->value;?>
+;
+    var objToFind = null;
+    for (var i = 0; i<img.length; i++) {
+      var obj = img[i];
+      if(obj.id == id) {
+        objToFind = obj;
+        break;
+      }
+    }
+
+    var id = 0;
+    var thisObj = objToFind;
+    var encoded = [];
+    thisObj.forward = 0;
+    thisObj.left = 0;
+    thisObj.right = 0;
+    encoded.push(thisObj);
+
+    var objToReturn = [];
+    while(id != 1) {
+      for (var i = 0; i<img.length; i++) {
+        var obj = img[i];
+        if(obj.id == thisObj.behind) {
+          if(obj.forward == thisObj.id) {
+            obj.right = 0;
+            obj.left = 0;
+          }
+          else if (obj.left == thisObj.id) {
+            obj.right = 0;
+            obj.forward = 0;
+          }
+          else if (obj.right == thisObj.id) {
+            obj.forward = 0;
+            obj.left = 0;
+          }
+
+          thisObj = obj;
+          id = obj.id;
+          encoded.push(obj);
+          break;
+        }
+      }
+    }
+    return encoded;
+  }
 
   function loadPathfinding(id) {
     var img = <?php echo $_smarty_tpl->tpl_vars['encoded_img']->value;?>
