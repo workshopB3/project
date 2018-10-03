@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-03 10:02:05
+/* Smarty version 3.1.33, created on 2018-10-03 15:04:24
   from '/Users/adrien/Sites/workshop/html/onepage/schools.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb4777de7e163_56572206',
+  'unifunc' => 'content_5bb4be58c3c0f5_47022519',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'b6a674b6e2be4be320962b9b648f5a08582566c6' => 
     array (
       0 => '/Users/adrien/Sites/workshop/html/onepage/schools.html',
-      1 => 1538553696,
+      1 => 1538571861,
       2 => 'file',
     ),
   ),
@@ -20,9 +20,12 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb4777de7e163_56572206 (Smarty_Internal_Template $_smarty_tpl) {
-?><div class="section" data-anchor="schools">
-  <h1>Nos écoles</h1>
+function content_5bb4be58c3c0f5_47022519 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="section" data-anchor="schools" style = "background-color:#4bbfc3">
+  <h1>Les écoles partenaires</h1>
+  <p class="description">
+    6 écoles se partagent le campus. Elles permettent de se former sur un éventail de métiers conséquent.
+  </p>
 </div>
 <div class="section">
         <img class="rotate" src="http://dev.meilleures-licences.com/logo_ecole/epsilogo-1447338739.png" width="260px" />

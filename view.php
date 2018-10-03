@@ -4,15 +4,16 @@ class View{
   private $smarty;
   public function __construct(){
     $this->smarty = new Smarty();
-    $this->display('header');
+    $this->smarty->display('html/header.html');
   }
   public function displayOnePage(){
     $this->display('onepage/onepage');
   }
   public function displayNavigation(){
-    $img_url = !empty($_GET["img_url"]) ? $_GET["img_url"] : "test";
-    $this->smarty->assign('img_url', $img_url);
     $this->display('navigation');
+  }
+  public function displayContact(){
+    $this->display('contact');
   }
   private function display($html){
     $this->smarty->display('html/'.$html.'.html');
