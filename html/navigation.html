@@ -1,11 +1,7 @@
 <link rel="stylesheet" href="web/css/navigation.css">
-<div id="navImg" style="background:url({$img[0]['url']});height:700px;background-size:cover;background-position:center;background-repeat:no-repeat;">
-  <li>
-    <a href='/'>
-      Retour
-    </a>
-  </li>
-  <img id="arrowLeft" class="fleche" style="left:5%;top:45%" src="./assets/imgs/fleche_gauche.png" onclick="changeSrcImg('left');"></img>
+<div style="background:url({$img[0]['url']});height:700px;background-size:cover;background-position:center;background-repeat:no-repeat;">
+  <!-- <img class="navImg" id="navImg" src="{$img[0]['url']}"></img>-->
+  <img id="arrowLeft" class="fleche" style="left:5%;margin-top:45%" src="./assets/imgs/fleche_gauche.png" onclick="changeSrcImg('left');"></img>
   <img id="arrowRight" class="fleche" style="right:5%;top:45%" src="./assets/imgs/fleche_droite.png" onclick="changeSrcImg('right');"></img>
   <img id="arrowForward" class="fleche" style="left:45%;top:5%" src="./assets/imgs/fleche_haut.png" onclick="changeSrcImg('forward');"></img>
   <img id="arrowBehind" class="fleche" style="left:45%;bottom:5%" src="./assets/imgs/fleche_bas.png" onclick="changeSrcImg('behind');"></img>
@@ -27,21 +23,37 @@
         break;
       }
     }
-    document.getElementById("navImg").style.backgroundImage = "url(" + currentObj.url + ")";
+    document.getElementById("navImg").src = currentObj.url;
     displayArrows(currentObj);
   }
 
   function displayArrows(obj) {
-    if(obj.forward != 0) {  document.getElementById("arrowForward").style.display = "block"; }
-    else { document.getElementById("arrowForward").style.display = "none"; }
+    if(obj.forward != 0) {
+      document.getElementById("arrowForward").style.display = "block";
+    }
+    else {
+      document.getElementById("arrowForward").style.display = "none";
+    }
 
-    if(obj.behind != 0) {document.getElementById("arrowBehind").style.display = "block"; }
-    else { document.getElementById("arrowBehind").style.display = "none"; }
+    if(obj.behind != 0) {
+      document.getElementById("arrowBehind").style.display = "block";
+    }
+    else {
+      document.getElementById("arrowBehind").style.display = "none";
+    }
 
-    if(obj.left != 0) { document.getElementById("arrowLeft").style.display = "block"; }
-    else { document.getElementById("arrowLeft").style.display = "none"; }
+    if(obj.left != 0) {
+      document.getElementById("arrowLeft").style.display = "block";
+    }
+    else {
+      document.getElementById("arrowLeft").style.display = "none";
+    }
 
-    if(obj.right != 0) { document.getElementById("arrowRight").style.display = "block"; }
-    else { document.getElementById("arrowRight").style.display = "none"; }
+    if(obj.right != 0) {
+      document.getElementById("arrowRight").style.display = "block";
+    }
+    else {
+      document.getElementById("arrowRight").style.display = "none";
+    }
   }
 </script>
