@@ -1,26 +1,26 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-04 10:56:02
+/* Smarty version 3.1.33, created on 2018-10-04 11:14:49
   from '/Users/ronanlaplaud/Documents/project/html/navigation.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb5d5a2593a12_51036512',
+  'unifunc' => 'content_5bb5da0915bd10_28808316',
   'has_nocache_code' => false,
-  'file_dependency' =>
+  'file_dependency' => 
   array (
-    '741dc61bce0fc94e527a9ad04032ead25b2d7444' =>
+    '741dc61bce0fc94e527a9ad04032ead25b2d7444' => 
     array (
       0 => '/Users/ronanlaplaud/Documents/project/html/navigation.html',
-      1 => 1538643361,
+      1 => 1538644487,
       2 => 'file',
     ),
   ),
-  'includes' =>
+  'includes' => 
   array (
   ),
 ),false)) {
-function content_5bb5d5a2593a12_51036512 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb5da0915bd10_28808316 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="web/css/navigation.css">
 <div id="challengeBord" style="margin-bottom: 20px;"class="pictureDesc" style="display: none;">
   <p id="challenge"></p>
@@ -30,9 +30,6 @@ function content_5bb5d5a2593a12_51036512 (Smarty_Internal_Template $_smarty_tpl)
     <div class="modal-content">
       <div class="modal-header">
         <h5 id ="modalTitle" class="modal-title"></h5>
-        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
       </div>
         <img id="successMedal"></img>
         <div class="modal-footer">
@@ -258,7 +255,5 @@ function content_5bb5d5a2593a12_51036512 (Smarty_Internal_Template $_smarty_tpl)
   }
 <?php echo '</script'; ?>
 >
-
-?>
 <?php }
 }
