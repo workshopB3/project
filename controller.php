@@ -11,11 +11,16 @@ class Controller {
   public function home(){
     $this->view->displayOnePage();
   }
-  public function navigation(){
+  public function navigation($type){
     $data_url = './assets/json/image.json';
     $data = file_get_contents($data_url);
     $json_data = stripslashes(html_entity_decode($data));
     $img = json_decode($json_data, true);
-    $this->view->displayNavigation($img);
+    if($type == 'choice') {
+      $this->view->displayNavigationChoice($img);
+    }
+    else {
+      $this->view->displayNavigation($img);
+    }
   }
 }

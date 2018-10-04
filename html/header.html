@@ -7,18 +7,20 @@
 	<link rel="icon" type="image/png" href="" />
 	<link rel="stylesheet" href="web/css/style.css">
   <link rel="stylesheet" href="plugins/fullpage/dist/fullpage.min.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 	<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
 <body>
-	{if !empty($smarty.get.page) && $smarty.get.page !='navigation'}
+	{if !empty($smarty.get.page) && ($smarty.get.page == 'navigation_choice' || $smarty.get.page == 'navigation')}
+	{else}
 	<nav id="menu">
     <ul>
-        <li><a href="index.php">Accueil</a></li>
-				<li><a href="index.php#schools">Nos écoles</a></li>
-				<li><a href="index.php#specificities">Les richesses du campus</a></li>
-        <li><a href="index.php?page=navigation">Navigation</a></li>
-				<li><a href="index.php#contact">Contact</a></li>
+        <li data-menuanchor="Accueil"><a href="index.php">Accueil</a></li>
+				<li data-menuanchor="Ecoles"><a href="#ecoles">Nos écoles</a></li>
+				<li data-menuanchor="Ecoles"><a href="#">Les Richesses du campus</a></li>
+        <li data-menuanchor="Navigation"><a href="index.php?page=navigation_choice">Navigation</a></li>
     </ul>
 	</nav>
 	{/if}

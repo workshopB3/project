@@ -1,26 +1,26 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-03 09:34:41
-  from '/Users/ronanlaplaud/Documents/project/html/onepage/schools.html' */
+/* Smarty version 3.1.33, created on 2018-10-03 08:33:51
+  from 'C:\wamp\www\workshop\project\html\onepage\schools.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb471113d8d32_87742480',
+  'unifunc' => 'content_5bb462cf294b47_33947014',
   'has_nocache_code' => false,
-  'file_dependency' =>
+  'file_dependency' => 
   array (
-    '23c1b09bbb538be0d51bc8ed9bb66524bc007234' =>
+    '18cdb60ab4b21d93691311292f44bcdcf27bd7b8' => 
     array (
-      0 => '/Users/ronanlaplaud/Documents/project/html/onepage/schools.html',
-      1 => 1538491209,
+      0 => 'C:\\wamp\\www\\workshop\\project\\html\\onepage\\schools.html',
+      1 => 1538492030,
       2 => 'file',
     ),
   ),
-  'includes' =>
+  'includes' => 
   array (
   ),
 ),false)) {
-function content_5bb471113d8d32_87742480 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb462cf294b47_33947014 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="section" data-anchor="schools">
   <h1>Nos écoles</h1>
 </div>
