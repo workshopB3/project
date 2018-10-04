@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-03 19:23:08
+/* Smarty version 3.1.33, created on 2018-10-04 13:19:58
   from '/Users/ronanlaplaud/Documents/project/html/navigation_choice.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb4fafc4fef28_73815579',
+  'unifunc' => 'content_5bb5f75e72daa2_54445836',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     'cdf60d02d24ecdaa2a12e06ea96ba2cb653d5f06' => 
     array (
       0 => '/Users/ronanlaplaud/Documents/project/html/navigation_choice.html',
-      1 => 1538587385,
+      1 => 1538651997,
       2 => 'file',
     ),
   ),
@@ -20,10 +20,14 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb4fafc4fef28_73815579 (Smarty_Internal_Template $_smarty_tpl) {
-?><button id="libre" onclick="window.location.href='/index.php?page=navigation'">Visite libre</button>
-<button id="guidee" onclick="document.getElementById('dropdownCat').style.display='block';">Visite guidée</button>
-<button id="challenge" onclick="window.location.href='/index.php?page=navigation&challenge=true'">Challenge</button>
+function content_5bb5f75e72daa2_54445836 (Smarty_Internal_Template $_smarty_tpl) {
+?><div class="lg-row-5"></div>
+<div class="lg-row-2">
+  <button class="btn btn-outline-dark" id="libre" onclick="window.location.href='/index.php?page=navigation'">Visite libre</button>
+  <button class="btn btn-outline-dark" id="guidee" onclick="document.getElementById('dropdownCat').style.display='block';">Visite guidée</button>
+  <button class="btn btn-outline-dark" id="challenge" onclick="window.location.href='/index.php?page=navigation&challenge=true'">Challenge</button>
+</div>
+<div class="lg-row-5"></div>
 
 <form>
   <select style="display:none;" id="dropdownCat" class='alt_list' name="dropdownCat" onchange="onChangeCat();">
