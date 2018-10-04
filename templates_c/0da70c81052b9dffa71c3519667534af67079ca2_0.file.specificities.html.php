@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-04 11:26:39
+/* Smarty version 3.1.33, created on 2018-10-04 13:29:03
   from '/Users/ronanlaplaud/Documents/project/html/onepage/specificities.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb5dccf6ed4a8_76841931',
+  'unifunc' => 'content_5bb5f97f9656e2_20403783',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '0da70c81052b9dffa71c3519667534af67079ca2' => 
     array (
       0 => '/Users/ronanlaplaud/Documents/project/html/onepage/specificities.html',
-      1 => 1538644908,
+      1 => 1538652542,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb5dccf6ed4a8_76841931 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb5f97f9656e2_20403783 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="section" data-anchor="specificities" body style = "background-color:#4bbfc3">
   <h1> <?php echo $_smarty_tpl->tpl_vars['xml']->value->richesses_du_campus;?>
 </h1>

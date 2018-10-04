@@ -10,8 +10,20 @@
       </div>
         <img id="successMedal"></img>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" onclick="window.location.href='/index.php?page=navigation'">Retour navigation</button>
+          <button id="btnSuccess" type="button" class="btn btn-secondary" onclick="window.location.href='/index.php?page=navigation'">Retour navigation</button>
         </div>
+    </div>
+  </div>
+</div>
+<div id="guidedModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id ="guidedTitle" class="modal-title">Vous êtes arrivés!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -70,7 +82,9 @@
   var urlId = getUrlParam("id");
   if(urlId != 0) {
     if(urlId > 1) {
+      var guidedObj = [];
       currentObj = loadPathfinding(urlId);
+      console.log(encodedImg);
     }
     else {
       encodedImg = {$encoded_img};
@@ -97,6 +111,7 @@
     for (var i = 0; i<img.length; i++) {
       var obj = img[i];
       if(obj.id == id) {
+        guidedObj = obj;
         objToFind = obj;
         break;
       }
@@ -158,7 +173,7 @@
     document.getElementById("pictureDesc").innerHTML = currentObj.description;
     displayArrows(currentObj);
 
-    if(challengeObj.length != 0) {
+    if(challengeObj != null && challengeObj.length != 0) {
       if(currentObj.id == challengeObj.id) {
         $('#successModal').modal('toggle');
         document.getElementById("modalTitle").innerHTML = "Félicitations! Vous avez atteint " + challengeObj.name;
@@ -170,6 +185,15 @@
         }
         else {
           document.getElementById("successMedal").src = './assets/imgs/bronze-medal.jpg';
+        }
+      }
+    }
+
+    if(guidedObj != null && guidedObj.length != 0) {
+      if(currentObj.id == guidedObj.id) {
+        urlId = getUrlParam("id");
+        if(urlId > 1) {
+          $('#guidedModal').modal('toggle');
         }
       }
     }

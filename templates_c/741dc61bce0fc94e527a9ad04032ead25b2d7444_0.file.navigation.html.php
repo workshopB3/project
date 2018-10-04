@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-04 11:26:34
+/* Smarty version 3.1.33, created on 2018-10-04 14:07:05
   from '/Users/ronanlaplaud/Documents/project/html/navigation.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb5dccae5bb79_40603235',
+  'unifunc' => 'content_5bb60269d9c295_22244012',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '741dc61bce0fc94e527a9ad04032ead25b2d7444' => 
     array (
       0 => '/Users/ronanlaplaud/Documents/project/html/navigation.html',
-      1 => 1538644933,
+      1 => 1538654708,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb5dccae5bb79_40603235 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb60269d9c295_22244012 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="web/css/navigation.css">
 <div id="challengeBord" style="margin-bottom: 20px;"class="pictureDesc" style="display: none;">
   <p id="challenge"></p>
@@ -33,8 +33,20 @@ function content_5bb5dccae5bb79_40603235 (Smarty_Internal_Template $_smarty_tpl)
       </div>
         <img id="successMedal"></img>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" onclick="window.location.href='/index.php?page=navigation'">Retour navigation</button>
+          <button id="btnSuccess" type="button" class="btn btn-secondary" onclick="window.location.href='/index.php?page=navigation'">Retour navigation</button>
         </div>
+    </div>
+  </div>
+</div>
+<div id="guidedModal" class="modal fade bd-example-modal-lg" tabindex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 id ="guidedTitle" class="modal-title">Vous êtes arrivés!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
     </div>
   </div>
 </div>
@@ -96,7 +108,9 @@ function content_5bb5dccae5bb79_40603235 (Smarty_Internal_Template $_smarty_tpl)
   var urlId = getUrlParam("id");
   if(urlId != 0) {
     if(urlId > 1) {
+      var guidedObj = [];
       currentObj = loadPathfinding(urlId);
+      console.log(encodedImg);
     }
     else {
       encodedImg = <?php echo $_smarty_tpl->tpl_vars['encoded_img']->value;?>
@@ -126,6 +140,7 @@ function content_5bb5dccae5bb79_40603235 (Smarty_Internal_Template $_smarty_tpl)
     for (var i = 0; i<img.length; i++) {
       var obj = img[i];
       if(obj.id == id) {
+        guidedObj = obj;
         objToFind = obj;
         break;
       }
@@ -187,7 +202,7 @@ function content_5bb5dccae5bb79_40603235 (Smarty_Internal_Template $_smarty_tpl)
     document.getElementById("pictureDesc").innerHTML = currentObj.description;
     displayArrows(currentObj);
 
-    if(challengeObj.length != 0) {
+    if(challengeObj != null && challengeObj.length != 0) {
       if(currentObj.id == challengeObj.id) {
         $('#successModal').modal('toggle');
         document.getElementById("modalTitle").innerHTML = "Félicitations! Vous avez atteint " + challengeObj.name;
@@ -199,6 +214,15 @@ function content_5bb5dccae5bb79_40603235 (Smarty_Internal_Template $_smarty_tpl)
         }
         else {
           document.getElementById("successMedal").src = './assets/imgs/bronze-medal.jpg';
+        }
+      }
+    }
+
+    if(guidedObj != null && guidedObj.length != 0) {
+      if(currentObj.id == guidedObj.id) {
+        urlId = getUrlParam("id");
+        if(urlId > 1) {
+          $('#guidedModal').modal('toggle');
         }
       }
     }

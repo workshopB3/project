@@ -1,11 +1,11 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-04 11:26:39
+/* Smarty version 3.1.33, created on 2018-10-04 13:29:03
   from '/Users/ronanlaplaud/Documents/project/html/onepage/home.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb5dccf6b9762_50034670',
+  'unifunc' => 'content_5bb5f97f93b859_62820773',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb5dccf6b9762_50034670 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb5f97f93b859_62820773 (Smarty_Internal_Template $_smarty_tpl) {
 ?><div class="section">
     <img src="web/images/campus_hep.jpg" width="100%" style='border-radius: 15px;'/>
       <h1><?php echo $_smarty_tpl->tpl_vars['xml']->value->campus_hep;?>
