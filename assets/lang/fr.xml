@@ -144,13 +144,5 @@
   <envoyer>
 	Envoyer
   </envoyer>
-
-  <message_erreur>
-	Veuillez remplir tous les blancs !
-  </message_erreur>
-  
-  <messsage_succes>
-	Le formulaire a bien été envoyé.
-  </message_succes>
   
 </site>

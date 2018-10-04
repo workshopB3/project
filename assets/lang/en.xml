@@ -147,13 +147,5 @@
   <envoyer>
 	Submit
   </envoyer>
-  
-  <message_erreur>
-  Please fill all fields ! 
-  </message_erreur>
-  
-  <message_succes>
-	Success ! 
-  </message_succes>
-  
+   
 </site>
