@@ -56,14 +56,14 @@
   },
   {
     "id" : 6,
-    "name" : "Escaliers 1er étage gauche",
+    "name" : "Escaliers de gauche entre le RDC et le 1er étage",
     "url" : "./assets/imgs/1st-floor-stairs-left.jpg",
     "left" : 24,
     "forward" : 0,
     "right" : 8,
     "behind" : 4,
     "category" : "Escalier",
-    "description" : "Escalier gauche entre le rez-de-chaussée et le 1er étage"
+    "description" : "Escalier de gauche entre le RDC et le 1er étage"
   },
   {
     "id" : 7,
@@ -255,8 +255,8 @@
   {
     "id" : 24,
     "name" : "Escalier entre le 1er et le 2ème étage",
-    "url" : "./assets/imgs/stairs.jpg",
-    "left" : 35,
+    "url" : "./assets/imgs/escalier-2eme-etage.jpg",
+    "left" : 42,
     "forward" : 0,
     "right" : 25,
     "behind" : 6,
@@ -372,6 +372,17 @@
     "behind" : 31,
     "category" : "Escalier",
     "description" : "Escalier fond 2ème étage"
+  },
+  {
+    "id" : 42,
+    "name" : "Escalier entre le 2ème et le 3ème étage",
+    "url" : "./assets/imgs/escalier-3eme-etage.jpg",
+    "left" : 0,
+    "forward" : 0,
+    "right" : 41,
+    "behind" : 24,
+    "category" : "Escalier",
+    "description" : "Escalier entre le 2ème et le 3ème étage"
   },
   {
     "id" : 35,
