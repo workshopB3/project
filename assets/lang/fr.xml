@@ -2,4 +2,155 @@
   <accueil>
     Accueil
   </accueil>
+  
+  <ecoles_partenaires>
+	Ecoles partenaires
+  </ecoles_partenaires>
+  
+  <ecoles_partenaires_description>
+	6 écoles se partagent le campus. Elle permettent de se former sur un éventail de métier conséquent.
+  </ecoles_partenaires_description>
+  
+  <richesses_du_campus>
+	Les richesses du campus
+  </richesses_du_campus>
+  
+  <navigation>
+	Navigation
+  </navigation>
+  
+  <contact>
+	Contact
+  </contact>
+  
+  <campus_hep>
+	Le campus HEP de Nantes
+  </campus_hep>
+   
+  <campus_hep_description>
+	Le nouveau campus nantais est fondé sur l’interactivité et la créativité, favorisant le développement de pédagogies alternatives. D’une surface de 4 000 m2, le bâtiment dispose d’infrastructures permettant aux 1000 étudiants qui y étudieront à terme d’effectuer leur scolarité dans des conditions optimales
+  </campus_hep_description>
+  
+  <ecole1>
+	Première école d’informatique en France à avoir été créée par des professionnels,  l’EPSI accompagne le développement des compétences informatiques depuis plus de 55 ans.
+  </ecole1>
+  
+  <ecole2>
+	IDRAC Business School est une école de commerce. Elle propose  un grand nombre de formations telles qu’une formation en marketing and business ou encore une formation  en management opérationnel .
+  </ecole2>
+  
+  <ecole3>
+	L’IFAG est une école de management et d’entrepreneuria .Elle forme les créateurs et repreneurs d’entreprises ainsi que tous ceux qui souhaitent occuper une fonction de direction.
+  </ecole3>
+  
+  <ecole4>
+	L’IGEFI – Institut de Gestion et d’Études Financières – est un établissement d’enseignement supérieur fondé en 1993, qui forme des professionnels de haut niveau aux métiers de l’expertise comptable, de la gestion, de la finance et de la paie.
+  </ecole4>
+  
+  <ecole5>
+	SUP’DE COM est la première école de communication française. Elle propose un  parcours de formation évolutif qui vous ouvrira les portes des postes à responsabilité en agence ou dans les services de communication.
+  </ecole5>
+  
+  <ecole6>
+	WIS est une école de web et de digital business. Elle forme des professionnels capables d’accompagner le développement des entreprises dans la digitalisation des processus métier.
+  </ecole6>
+  
+  <richesses_du_campus_description>
+    6 écoles se partagent le campus. Elles permettent de se former sur un éventail de métiers conséquent.
+  </richesses_du_campus_description>
+  
+  <richesse1>
+	Salles de cours modulables et espaces de co-working.
+  </richesse1>
+  
+  <richesse1_description>
+	Des salles de cours  modulables sont mises à disposition des élèves; qui peuvent déplacer à leur guise les tables et les chaises afin de pouvoir travailler en groupe dans des conditions optimales.
+  </richesse1_description>
+  
+  <richesse2>
+	Salles informatiques
+  </richesse2>
+  
+  <richesse2_description>
+	Pour les élèves ne disposant pas de leur propre ordinateur, des salles informatiques sont disponibles. Elles  permettent d’accéder à un grand nombre d’outils utiles aux différentes formations.
+  </richesse2_description>
+  
+  <richesse3>
+	Espace restauration
+  </richesse3>
+  
+  <richesse3_description>
+	L’espace restauration du campus est situé au rez de chaussée du bâtiment. Il permet aux élèves qui le souhaitent de se restaurer dans un lieu convivial. Pour ceux désirant réchauffer leur plat : pas de panique ! Des micro-onde sont en libre service.
+  </richesse3_description>
+  
+  <richesse4>
+	Espaces partagés de travail et de vie.
+  </richesse4>
+  
+  <richesse4_description>
+	En plus des salles de cours, des espaces sont mis à disposition au sein des locaux du campus pour travailler ou se divertir. On trouve notamment un espace pour jouer à la console ainsi qu’une table de ping pong.
+  </richesse4_description>
+  
+  <richesse5>
+	Laboratoire MyDil
+  </richesse5>
+  
+  <richesse5_description>
+	MyDil permet l'élaboration et le développement de projets innovants. Le labo est dédié au codage, à l'innovation technologique. Vous disposez d'un accès illimité aux dernières technologies.
+  </richesse5_description>
+  
+
+  
+  <nous_contacter>
+	Nous contacter
+  </nous_contacter>
+  
+  <nous_trouver>
+	Nous trouver
+  </nous_trouver>
+  
+  <vous_etes>
+	Vous êtes : 
+  </vous_etes>
+  
+  <votre_email>
+	Votre email : 
+  </votre_email>
+  
+  <sujet>
+	Sujet de votre message :
+  </sujet>
+  
+  <votre_message>
+	Votre message : 
+  </votre_message>
+  
+  <piece_jointe>
+	Pièce jointe : 
+  </piece_jointe>
+  
+   <candidat>
+	Un candidat
+  </candidat>
+  
+  <entreprise>
+	Une entreprise
+  </entreprise>
+  
+  <autre>
+	Autre
+  </autre>
+  
+  <envoyer>
+	Envoyer
+  </envoyer>
+
+  <message_erreur>
+	Veuillez remplir tous les blancs !
+  </message_erreur>
+  
+  <messsage_succes>
+	Le formulaire a bien été envoyé.
+  </message_succes>
+  
 </site>
