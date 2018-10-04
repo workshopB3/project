@@ -23,4 +23,7 @@ class Controller {
       $this->view->displayNavigation($img);
     }
   }
+  public function contact(){
+    $this->view->displayContact();
+  }
 }

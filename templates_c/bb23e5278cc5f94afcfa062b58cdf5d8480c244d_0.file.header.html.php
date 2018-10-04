@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-03 16:33:24
-  from '/Users/adrien/Sites/workshop/html/header.html' */
+/* Smarty version 3.1.33, created on 2018-10-03 14:56:53
+  from 'C:\wamp64\www\workshop\html\header.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb4d334cad746_87328347',
+  'unifunc' => 'content_5bb4d8b563a400_59555594',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
-    '9b19c3e6ec0fb23b3a2591c8180ac3e9dfc877d8' => 
+    'bb23e5278cc5f94afcfa062b58cdf5d8480c244d' => 
     array (
-      0 => '/Users/adrien/Sites/workshop/html/header.html',
-      1 => 1538577202,
+      0 => 'C:\\wamp64\\www\\workshop\\html\\header.html',
+      1 => 1538578502,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb4d334cad746_87328347 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb4d8b563a400_59555594 (Smarty_Internal_Template $_smarty_tpl) {
 ?><!DOCTYPE html>
 <html lang="fr">
 <head>
@@ -44,10 +44,14 @@ function content_5bb4d334cad746_87328347 (Smarty_Internal_Template $_smarty_tpl)
     <ul>
         <li><a class="active" href="index.php"><?php echo $_smarty_tpl->tpl_vars['xml']->value->accueil;?>
 </a></li>
-				<li><a href="index.php#secondPage">Écoles partenaires</a></li>
-				<li><a href="index.php#ninthPage">Les richesses du campus</a></li>
-        <li><a href="index.php?page=navigation">Navigation</a></li>
-				<li><a href="index.php?page=contact">Contact</a></li>
+				<li><a href="index.php#secondPage"><?php echo $_smarty_tpl->tpl_vars['xml']->value->ecoles_partenaires;?>
+</a></li>
+				<li><a href="index.php#ninthPage"><?php echo $_smarty_tpl->tpl_vars['xml']->value->richesses_du_campus;?>
+</a></li>
+        <li><a href="index.php?page=navigation"><?php echo $_smarty_tpl->tpl_vars['xml']->value->navigation;?>
+</a></li>
+				<li><a href="index.php?page=contact"><?php echo $_smarty_tpl->tpl_vars['xml']->value->contact;?>
+</a></li>
 				<li><a href="<?php if (!empty($_GET['page'])) {?>index.php?page=<?php echo $_GET['page'];?>
 &lang=fr<?php } else { ?>index.php?lang=fr<?php }?>"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png" width='30' height='30' /></a></li>
 				<li><a href="<?php if (!empty($_GET['page'])) {?>index.php?page=<?php echo $_GET['page'];?>

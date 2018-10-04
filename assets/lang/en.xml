@@ -1,8 +1,151 @@
 <site>
-  <menu>
-  <accueil>Accueil</accueil>
-  <navigation>Navigation</navigation>
-  <contact>Contact</contact>
-  <ecole>Our schools</ecole>
-  </menu>
+
+  <accueil>
+    Home
+  </accueil>
+
+  <ecoles_partenaires>
+	Schools partner
+  </ecoles_partenaires>
+
+  <richesses_du_campus>
+	Specificities of the campus
+  </richesses_du_campus>
+
+  <navigation>
+	Navigation
+  </navigation>
+
+  <contact>
+	Contact
+  </contact>
+
+  <campus_hep>
+	HEP campus
+  </campus_hep>
+
+  <campus_hep_description>
+	The new campus of Nantes is based on the interactivity and creativity, which encourages the development of alternative pedagogies. With an area of 4000m², the building has infrastructures that allow  the 1000 students who will work inside to fulfill their schooling requirement in optimal conditions.
+  </campus_hep_description>
+
+  <ecoles_partenaires_description>
+	There are 6 different schools in the campus. They allow to form in a lot of different job.
+  </ecoles_partenaires_description>
+
+  <campus_hep_description>
+	The new campus of Nantes is based on the interactivity and creativity, which encourages the development of alternative pedagogies. With an area of 4000m², the building has infrastructures that allow  the 1000 students who will work inside to fulfill their schooling requirement in optimal conditions.
+  </campus_hep_description>
+
+  <ecole1>
+	First computer school in France created by professionals, EPSI accompanies the development of IT skills for more than 55 years.
+  </ecole1>
+
+  <ecole2>
+	IDRAC Business School is a business school.  It proposes a lot of formations such as a formation in  marketing and business or in operationnel management.
+  </ecole2>
+
+  <ecole3>
+	IFAG is a management and entrepreneurship school. It trains business creators or  buyers and all who want to occupy a managerial function.
+  </ecole3>
+
+  <ecole4>
+	IGEFI - Institute of Management and Financial Studies – is an institution of higher education founded in 1993, that trains high-level professional for accounting professions, management professions, finance professions and pay professions.
+  </ecole4>
+
+  <ecole5>
+	SUP'DE COM is the first French communication school. It proposes a training course which opens the doors of the market in the services of communication.
+  </ecole5>
+
+  <ecole6>
+	WIS is a school of Web and digital commerce. It trains professionals capable of supporting the development of companies in the digitization of the business process.
+  </ecole6>
+
+  <richesses_du_campus_description>
+	There are 6 different schools in the campus. They allow to form in a lot of jobs.
+  </richesses_du_campus_description>
+
+  <richesse1>
+	Flexible classrooms and co-working spaces
+  </richesse1>
+
+  <richesse1_description>
+	Students can use flexible classrooms. They can move the furniture as they want to work in optimal conditions as a group.
+  </richesse1_description>
+
+  <richesse2>
+	IT classrooms
+  </richesse2>
+
+  <richesse2_description>
+	Classrooms with computers are available for students who have forget their laptop. Theses classrooms give numerous tools valuable for each schools.
+  </richesse2_description>
+
+  <richesse3>
+	Lunch space
+  </richesse3>
+
+  <richesse3_description>
+	The room to lunch on the campus is on the ground floor. It permit to the students to eat in a friendly place. It’s also possible to heat your meal thanks to microwave.
+  </richesse3_description>
+
+  <richesse4>
+	Life and work shared places
+  </richesse4>
+
+  <richesse4_description>
+	In addition to classrooms, some space are made available inside the campus to work or to chill. Their is a console at the first floor and a ping pong table.
+  </richesse4_description>
+
+  <richesse5>
+	MyDil laboritory
+  </richesse5>
+
+  <richesse5_description>
+	MyDil enables the development and development of innovative projects. The lab is dedicated to coding, to technological innovation. You have unlimited access to the latest technologies.
+  </richesse5_description>
+
+  <nous_contacter>
+	Contact us
+  </nous_contacter>
+
+  <nous_trouver>
+	Find us
+  </nous_trouver>
+
+  <vous_etes>
+	You are :
+  </vous_etes>
+
+  <votre_email>
+	Your email :
+  </votre_email>
+
+  <sujet>
+	Subject of your message :
+  </sujet>
+
+  <votre_message>
+	Your message :
+  </votre_message>
+
+  <piece_jointe>
+	Attachment file :
+  </piece_jointe>
+
+  <candidat>
+	A candidate
+  </candidat>
+
+  <entreprise>
+	An entreprise
+  </entreprise>
+
+  <autre>
+	Other
+  </autre>
+
+  <envoyer>
+	Submit
+  </envoyer>
+
 </site>

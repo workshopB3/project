@@ -17,10 +17,16 @@
 	{else}
 	<nav id="menu">
     <ul>
-        <li data-menuanchor="Accueil"><a href="index.php">Accueil</a></li>
-				<li data-menuanchor="Ecoles"><a href="#ecoles">Nos écoles</a></li>
-				<li data-menuanchor="Ecoles"><a href="#">Les Richesses du campus</a></li>
-        <li data-menuanchor="Navigation"><a href="index.php?page=navigation_choice">Navigation</a></li>
+        <li><a class="active" href="index.php">{$xml->accueil}</a></li>
+				<li><a href="index.php#secondPage">{$xml->ecoles_partenaires}</a></li>
+				<li><a href="index.php#ninthPage">{$xml->richesses_du_campus}</a></li>
+        <li><a href="index.php?page=navigation_choice">{$xml->navigation}</a></li>
+				<li><a href="index.php?page=contact">{$xml->contact}</a></li>
+				<li><a href="{if !empty($smarty.get.page)}index.php?page={$smarty.get.page}&lang=fr{else}index.php?lang=fr{/if}"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/c/c3/Flag_of_France.svg/1200px-Flag_of_France.svg.png" width='30' height='30' /></a></li>
+				<li><a href="{if !empty($smarty.get.page)}index.php?page={$smarty.get.page}&lang=en{else}index.php?lang=en{/if}"><img src="https://images-na.ssl-images-amazon.com/images/I/41cfK9pPRpL._SX355_.jpg" width='30' height='30' /></a></li>
     </ul>
-	</nav>
+</nav>
+<div class="clear: both;">
+
+</div>
 	{/if}

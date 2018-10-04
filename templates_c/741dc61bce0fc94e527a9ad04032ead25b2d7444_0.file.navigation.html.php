@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-04 11:14:49
+/* Smarty version 3.1.33, created on 2018-10-04 11:26:34
   from '/Users/ronanlaplaud/Documents/project/html/navigation.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb5da0915bd10_28808316',
+  'unifunc' => 'content_5bb5dccae5bb79_40603235',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '741dc61bce0fc94e527a9ad04032ead25b2d7444' => 
     array (
       0 => '/Users/ronanlaplaud/Documents/project/html/navigation.html',
-      1 => 1538644487,
+      1 => 1538644933,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb5da0915bd10_28808316 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb5dccae5bb79_40603235 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="web/css/navigation.css">
 <div id="challengeBord" style="margin-bottom: 20px;"class="pictureDesc" style="display: none;">
   <p id="challenge"></p>
