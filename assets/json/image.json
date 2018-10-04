@@ -7,7 +7,7 @@
     "forward" : 2,
     "right" : 0,
     "behind" : 0,
-    "category" : "Others",
+    "category" : "Autres",
     "description" : "Batiment HEP"
   },
   {
@@ -29,7 +29,7 @@
     "forward" : 4,
     "right" : 0,
     "behind" : 2,
-    "category" : "Living places",
+    "category" : "Lieux de vie",
     "description" : "Salle de vie"
   },
   {
@@ -40,8 +40,8 @@
     "forward" : 5,
     "right" : 7,
     "behind" : 3,
-    "category" : "Living places",
-    "description" : "Escalier salle de vie"
+    "category" : "Lieux de vie",
+    "description" : "Escalier de la salle de vie"
   },
   {
     "id" : 5,
@@ -56,14 +56,14 @@
   },
   {
     "id" : 6,
-    "name" : "Escaliers 1er gauche",
+    "name" : "Escaliers de gauche entre le RDC et le 1er étage",
     "url" : "./assets/imgs/1st-floor-stairs-left.jpg",
     "left" : 24,
     "forward" : 0,
     "right" : 8,
     "behind" : 4,
     "category" : "Escalier",
-    "description" : "Escalier gauche entre le rez-de-chaussée et le 1er étage"
+    "description" : "Escalier de gauche entre le RDC et le 1er étage"
   },
   {
     "id" : 7,
@@ -73,12 +73,12 @@
     "forward" : 14,
     "right" : 0,
     "behind" : 4,
-    "category" : "Living places",
-    "description" : "Cafétéria"
+    "category" : "Lieux de vie",
+    "description" : "Cafétéria 1er étage"
   },
   {
     "id" : 8,
-    "name" : "Sortie 1er etage salle 100",
+    "name" : "Sortie des escaliers 1er étage",
     "url" : "./assets/imgs/1er-etage-pre-salle-100.jpg",
     "left" : 9,
     "forward" : 0,
@@ -89,29 +89,29 @@
   },
   {
     "id" : 9,
-    "name" : "salle 100 droite",
+    "name" : "salle 100 porte de droite",
     "url" : "./assets/imgs/salle-100.jpg",
-    "left" : 0,
-    "forward" : 10,
+    "left" : 10,
+    "forward" : 0,
     "right" : 0,
     "behind" : 8,
-    "category" : "Classrooms",
-    "description" : "Salle 100 porte droite"
+    "category" : "Salles de classe",
+    "description" : "Salle 100 porte de droite"
   },
   {
     "id" : 10,
-    "name" : "Salle 100 gauche",
-    "url" : "./assets/imgs/wip.png",
+    "name" : "Salle 100 porte de gauche",
+    "url" : "./assets/imgs/salle-100-gauche.jpg",
     "left" : 0,
-    "forward" : 9,
-    "right" : 0,
+    "forward" : 0,
+    "right" : 9,
     "behind" : 7,
-    "category" : "Classrooms",
-    "description" : "Salle 100 porte gauche"
+    "category" : "Salles de classe",
+    "description" : "Salle 100 porte de gauche"
   },
   {
     "id" : 11,
-    "name" : "admin ifag",
+    "name" : "Administration IFAG",
     "url" : "./assets/imgs/admin-ifag.jpg",
     "left" : 0,
     "forward" : 12,
@@ -122,7 +122,7 @@
   },
   {
     "id" : 12,
-    "name" : "croisement 1er etage",
+    "name" : "Croisement espace détente 1er étage",
     "url" : "./assets/imgs/croisement-1-1er-etage.jpg",
     "left" : 13,
     "forward" : 17,
@@ -133,18 +133,18 @@
   },
   {
     "id" : 13,
-    "name" : "gamecube",
+    "name" : "Espace détente doté d'une gamecube",
     "url" : "./assets/imgs/gamecube.jpg",
     "left" : 0,
     "forward" : 0,
     "right" : 0,
     "behind" : 12,
-    "category" : "Living places",
+    "category" : "Lieux de vie",
     "description" : "Espace détente doté d'une gamecube"
   },
   {
     "id" : 14,
-    "name" : "couloir vers terasse",
+    "name" : "Couloir menant à la terasse",
     "url" : "./assets/imgs/devant-labo.jpg",
     "left" : 15,
     "forward" : 16,
@@ -155,29 +155,29 @@
   },
   {
     "id" : 15,
-    "name" : "myDIL",
-    "url" : "./assets/imgs/wip.png",
+    "name" : "my Digital Innovation Lab",
+    "url" : "./assets/imgs/myDIL.jpg",
     "left" : 0,
     "forward" : 0,
     "right" : 0,
     "behind" : 14,
-    "category" : "Outils",
+    "category" : "Espace de co-working",
     "description" : "my Digital Innovation Lab"
   },
   {
     "id" : 16,
-    "name" : "terasse",
+    "name" : "Terasse",
     "url" : "./assets/imgs/terasse.jpg",
     "left" : 0,
     "forward" : 0,
     "right" : 0,
     "behind" : 14,
-    "category" : "Living places",
+    "category" : "Lieux de vie",
     "description" : "Terasse située au 1er étage"
   },
   {
     "id" : 17,
-    "name" : "Couloir 1er etage",
+    "name" : "Couloir 1er étage",
     "url" : "./assets/imgs/milieu-couloir-1er-etage.jpg",
     "left" : 18,
     "forward" : 20,
@@ -188,18 +188,18 @@
   },
   {
     "id" : 18,
-    "name" : "exemple salle de cours",
-    "url" : "./assets/imgs/wip.png",
+    "name" : "Un exemple salle de cours",
+    "url" : "./assets/imgs/exemple-salle-cours.jpg",
     "left" : 0,
     "forward" : 0,
     "right" : 0,
     "behind" : 17,
-    "category" : "Classrooms",
+    "category" : "Salles de classe",
     "description" : "Un exemple de salle de cours"
   },
   {
     "id" : 19,
-    "name" : "toilette 1er etage",
+    "name" : "Toilettes 1er étage",
     "url" : "./assets/imgs/toilette-1er-etage.jpg",
     "left" : 0,
     "forward" : 0,
@@ -210,29 +210,29 @@
   },
   {
     "id" : 20,
-    "name" : "croisement fin couloir 1er etage",
+    "name" : "Croisement espace co-working 1er étage",
     "url" : "./assets/imgs/fin-couloir-1er-etage.jpg",
     "left" : 21,
     "forward" : 22,
     "right" : 23,
     "behind" : 17,
     "category" : "Couloir",
-    "description" : "Croisement espace co-working 1er etage"
+    "description" : "Croisement espace co-working 1er étage"
   },
   {
     "id" : 21,
-    "name" : "co-working 1er etage",
+    "name" : "Espace de co-working 1er étage",
     "url" : "./assets/imgs/co-working-1er-etage.jpg",
     "left" : 0,
     "forward" : 0,
     "right" : 0,
     "behind" : 20,
-    "category" : "Co-working",
+    "category" : "Espace de co-working",
     "description" : "Espace de co-working 1er étage"
   },
   {
     "id" : 22,
-    "name" : "admin ifag suite",
+    "name" : "Administration IFAG au fond du couloir",
     "url" : "./assets/imgs/admin-ifag-suite.jpg",
     "left" : 0,
     "forward" : 0,
@@ -243,8 +243,8 @@
   },
   {
     "id" : 23,
-    "name" : "escalier fond 1er ",
-    "url" : "./assets/imgs/escalier.jpg",
+    "name" : "Escalier fond 1er étage",
+    "url" : "./assets/imgs/stairs.jpg",
     "left" : 0,
     "forward" : 0,
     "right" : 34,
@@ -254,14 +254,14 @@
   },
   {
     "id" : 24,
-    "name" : "escalier debut 2eme étage",
-    "url" : "./assets/imgs/escalier.jpg",
-    "left" : 35,
+    "name" : "Escalier entre le 1er et le 2ème étage",
+    "url" : "./assets/imgs/escalier-2eme-etage.jpg",
+    "left" : 42,
     "forward" : 0,
     "right" : 25,
     "behind" : 6,
     "category" : "Escalier",
-    "description" : "Escaliers entre le 1er et le 2eme étage"
+    "description" : "Escaliers entre le 1er et le 2ème étage"
   },
   {
     "id" : 25,
@@ -276,19 +276,19 @@
   },
   {
     "id" : 26,
-    "name" : "salle 200",
+    "name" : "Salle de projet - Salle 200",
     "url" : "./assets/imgs/salle-200.jpg",
     "left" : 0,
     "forward" : 0,
     "right" : 0,
     "behind" : 25,
-    "category" : "Classrooms",
+    "category" : "Salles de classe",
     "description" : "Salle de projet - Salle 200"
   },
   {
     "id" : 27,
-    "name" : "croisement 2eme etage",
-    "url" : "./assets/imgs/croisement-2eme-etage.jpg",
+    "name" : "Croisement espace détente 2ème étage",
+    "url" : "./assets/imgs/debut-couloir-2eme-etage.jpg",
     "left" : 28,
     "forward" : 29,
     "right" : 0,
@@ -298,41 +298,41 @@
   },
   {
     "id" : 28,
-    "name" : "ping pong",
+    "name" : "Espace détente doté d'une table de ping pong",
     "url" : "./assets/imgs/ping-pong.jpg",
     "left" : 0,
     "forward" : 0,
     "right" : 0,
     "behind" : 27,
-    "category" : "Living places",
+    "category" : "Lieux de vie",
     "description" : "Espace détente doté d'une table de ping pong²"
   },
   {
     "id" : 29,
-    "name" : "milieu couloir 2eme",
-    "url" : "./assets/imgs/wip.png",
+    "name" : "Couloir 2ème étage",
+    "url" : "./assets/imgs/milieu-couloir-2eme-etage.jpg",
     "left" : 0,
     "forward" : 31,
     "right" : 30,
     "behind" : 27,
     "category" : "Couloir",
-    "description" : "Couloir 2eme étage"
+    "description" : "Couloir 2ème étage"
   },
   {
     "id" : 30,
-    "name" : "toilette 2eme etage",
-    "url" : "./assets/imgs/wip.png",
+    "name" : "Toilettes 2ème étage",
+    "url" : "./assets/imgs/toilette-2eme-etage.jpg",
     "left" : 0,
     "forward" : 0,
     "right" : 0,
     "behind" : 29,
     "category" : "Toilettes",
-    "description" : "Toilettes 2eme étage"
+    "description" : "Toilettes 2ème étage"
   },
   {
     "id" : 31,
-    "name" : "fin couloir 2eme",
-    "url" : "./assets/imgs/wip.jpg",
+    "name" : "Croisement espace co-working 2ème étage",
+    "url" : "./assets/imgs/fin-couloir-2eme-etage.jpg",
     "left" : 32,
     "forward" : 33,
     "right" : 34,
@@ -342,18 +342,18 @@
   },
   {
     "id" : 32,
-    "name" : "espace co-working 2eme",
-    "url" : "./assets/imgs/wip.jpg",
+    "name" : "Espace de co-working 2ème étage",
+    "url" : "./assets/imgs/co-working-2eme-etage.jpg",
     "left" : 0,
     "forward" : 0,
     "right" : 0,
     "behind" : 31,
-    "category" : "Co-working",
+    "category" : "Espace de co-working",
     "description" : "Espace de co-working 2ème étage"
   },
   {
     "id" : 33,
-    "name" : "admin epsi wis",
+    "name" : "Administration EPSI et WIS",
     "url" : "./assets/imgs/admin-epsi-wis.jpg",
     "left" : 0,
     "forward" : 0,
@@ -364,8 +364,8 @@
   },
   {
     "id" : 34,
-    "name" : "escalier fond 2eme etage",
-    "url" : "./assets/imgs/escalier.jpg",
+    "name" : "Escalier fond 2ème étage",
+    "url" : "./assets/imgs/stairs.jpg",
     "left" : 23,
     "forward" : 0,
     "right" : 41,
@@ -374,30 +374,41 @@
     "description" : "Escalier fond 2ème étage"
   },
   {
+    "id" : 42,
+    "name" : "Escalier entre le 2ème et le 3ème étage",
+    "url" : "./assets/imgs/escalier-3eme-etage.jpg",
+    "left" : 0,
+    "forward" : 0,
+    "right" : 41,
+    "behind" : 24,
+    "category" : "Escalier",
+    "description" : "Escalier entre le 2ème et le 3ème étage"
+  },
+  {
     "id" : 35,
-    "name" : "Espace détente 3eme etage",
+    "name" : "Espace détente 3ème étage",
     "url" : "./assets/imgs/espace-chill-3eme.jpg",
     "left" : 36,
     "forward" : 0,
     "right" : 37,
     "behind" : 24,
-    "category" : "Living places",
+    "category" : "Lieux de vie",
     "description" : "Espace détente 3ème étage"
   },
   {
     "id" : 36,
-    "name" : "Salle 300",
-    "url" : "./assets/imgs/wip.png",
+    "name" : "Salle de projet - Salle 300",
+    "url" : "./assets/imgs/salle-300.jpg",
     "left" : 0,
     "forward" : 0,
     "right" : 0,
     "behind" : 35,
-    "category" : "Classrooms",
-    "description" : "Salle 300"
+    "category" : "Salles de classe",
+    "description" : "Salle de projet - Salle 300"
   },
   {
     "id" : 37,
-    "name" : "debut couloir 3eme etage",
+    "name" : "Toilettes 3ème étage",
     "url" : "./assets/imgs/debut-couloir-3eme-etage.jpg",
     "left" : 0,
     "forward" : 38,
@@ -408,41 +419,41 @@
   },
   {
     "id" : 38,
-    "name" : "Administration SUP de COM",
+    "name" : "Administration SUP' de COM et IDRAC",
     "url" : "./assets/imgs/admin-supcom.jpg",
     "left" : 0,
     "forward" : 39,
     "right" : 0,
     "behind" : 37,
     "category" : "Administration",
-    "description" : "Administration SUP de COM"
+    "description" : "Administration SUP' de COM et IDRAC"
   },
   {
     "id" : 39,
-    "name" : "fin couloir 3eme",
+    "name" : "Croisement espace de co-working 3ème étage",
     "url" : "./assets/imgs/fin-couloir-3eme-etage.jpg",
     "left" : 40,
     "forward" : 0,
     "right" : 41,
     "behind" : 38,
     "category" : "Couloir",
-    "description" : "Croisement espace co-working 3eme etage"
+    "description" : "Croisement espace de co-working 3ème étage"
   },
   {
     "id" : 40,
-    "name" : "co-working 3eme etage",
+    "name" : "Espace de co-working 3ème étage",
     "url" : "./assets/imgs/co-working-3eme-etage.jpg",
     "left" : 0,
     "forward" : 0,
     "right" : 0,
     "behind" : 39,
-    "category" : "Co-working",
+    "category" : "Espace de co-working",
     "description" : "Espace de co-working 3ème étage"
   },
   {
     "id" : 41,
-    "name" : "escalier fond 3eme etage",
-    "url" : "./assets/imgs/escalier.jpg",
+    "name" : "Escalier fond 3ème étage",
+    "url" : "./assets/imgs/stairs.jpg",
     "left" : 34,
     "forward" : 0,
     "right" : 0,

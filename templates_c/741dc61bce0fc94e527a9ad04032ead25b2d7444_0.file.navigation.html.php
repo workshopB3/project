@@ -1,18 +1,18 @@
 <?php
-/* Smarty version 3.1.33, created on 2018-10-04 10:26:08
+/* Smarty version 3.1.33, created on 2018-10-04 10:56:02
   from '/Users/ronanlaplaud/Documents/project/html/navigation.html' */
 
 /* @var Smarty_Internal_Template $_smarty_tpl */
 if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   'version' => '3.1.33',
-  'unifunc' => 'content_5bb5cea05e2374_51130972',
+  'unifunc' => 'content_5bb5d5a2593a12_51036512',
   'has_nocache_code' => false,
   'file_dependency' => 
   array (
     '741dc61bce0fc94e527a9ad04032ead25b2d7444' => 
     array (
       0 => '/Users/ronanlaplaud/Documents/project/html/navigation.html',
-      1 => 1538641567,
+      1 => 1538643361,
       2 => 'file',
     ),
   ),
@@ -20,7 +20,7 @@ if ($_smarty_tpl->_decodeProperties($_smarty_tpl, array (
   array (
   ),
 ),false)) {
-function content_5bb5cea05e2374_51130972 (Smarty_Internal_Template $_smarty_tpl) {
+function content_5bb5d5a2593a12_51036512 (Smarty_Internal_Template $_smarty_tpl) {
 ?><link rel="stylesheet" href="web/css/navigation.css">
 <div id="challengeBord" style="margin-bottom: 20px;"class="pictureDesc" style="display: none;">
   <p id="challenge"></p>
@@ -35,15 +35,18 @@ function content_5bb5cea05e2374_51130972 (Smarty_Internal_Template $_smarty_tpl)
         </button>
       </div>
         <img id="successMedal"></img>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" onclick="window.location.href='/index.php?page=navigation'">Retour navigation</button>
+        </div>
     </div>
   </div>
 </div>
 <div class="content">
   <div id="navImg" style="background:url(<?php echo $_smarty_tpl->tpl_vars['img']->value[0]['url'];?>
-);height:630px;background-size:cover;background-position:center;background-repeat:no-repeat;">
+);height:580px;background-size:850px;background-position:center;background-repeat:no-repeat;">
     <a class="linkBtn" href="/">Retour site</a>
-    <img id="arrowLeft" class="fleche" style="left:5%;top:45%" src="./assets/imgs/fleche_gauche.png" onclick="changeSrcImg('left');"></img>
-    <img id="arrowRight" class="fleche" style="right:5%;top:45%" src="./assets/imgs/fleche_droite.png" onclick="changeSrcImg('right');"></img>
+    <img id="arrowLeft" class="fleche" style="left:20%;top:40%" src="./assets/imgs/fleche_gauche.png" onclick="changeSrcImg('left');"></img>
+    <img id="arrowRight" class="fleche" style="right:20%;top:40%" src="./assets/imgs/fleche_droite.png" onclick="changeSrcImg('right');"></img>
     <img id="arrowForward" class="fleche" style="left:45%;top:5%" src="./assets/imgs/fleche_haut.png" onclick="changeSrcImg('forward');"></img>
     <img id="arrowBehind" class="fleche" style="left:45%;bottom:15%" src="./assets/imgs/fleche_bas.png" onclick="changeSrcImg('behind');"></img>
   </div>
